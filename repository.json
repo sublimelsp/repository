@@ -245,5 +245,21 @@
 				}
 			]
 		}
+	],
+	"dependencies": [
+		{
+			"name": "lsp_utils",
+			"load_order": "10",
+			"description": "Module with LSP-related utilities",
+			"author": "rchl",
+			"issues": "https://github.com/sublimelsp/lsp_utils/issues",
+			"releases": [
+				{
+					"base": "https://github.com/sublimelsp/lsp_utils",
+					"tags": true,
+					"sublime_text": ">=3000"
+				}
+			]
+		}
 	]
 }
