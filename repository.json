@@ -58,6 +58,16 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-Dart",
+			"name": "LSP-Dart",
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-css",
 			"name": "LSP-css",
 			"releases": [
