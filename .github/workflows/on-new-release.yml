@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-16.04
     steps:
       - uses: actions/checkout@v2
-      - run: python3 auto-update-repository.py <<<'${{ github.event.client_payload }}'
+      - run: python3 auto-update-repository.py <<<'${{ toJson(github.event.client_payload) }}'
       - uses: peter-evans/create-pull-request@v3
         with:
           commit-message: '[auto] add or update package'
