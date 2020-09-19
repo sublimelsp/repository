@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-16.04
     steps:
       - uses: actions/checkout@v2
+      - run: cd repository
       - run: python3 auto-update-repository.json <<<'${{ github.event.client_payload }}'
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
