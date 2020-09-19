@@ -161,6 +161,19 @@
 			]
 		},
 		{
+			"name": "LSP-robloxluau",
+			"details": "https://github.com/alihsaas/LSP-robloxluau",
+			"labels": [
+				"lsp", "roblox", "luau"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"name": "LSP-serenata",
 			"details": "https://github.com/Cloudstek/LSP-serenata",
 			"releases": [
