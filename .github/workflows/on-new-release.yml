@@ -1,0 +1,17 @@
+name: On New Release
+
+on: [repository_dispatch]
+
+jobs:
+  create-pull-request:
+    if: github.event.action == 'lsp-add-or-update-package'
+    runs-on: ubuntu-16.04
+    steps:
+      - uses: actions/checkout@v2
+      - run: python3 auto-update-repository.json <<<'${{ github.event.client_payload }}'
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          commit-message: '[auto] add or update package'
+          delete-branch: true
+          branch-suffix: random
