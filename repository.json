@@ -192,6 +192,17 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-SourceKit",
+			"name": "LSP-SourceKit",
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"platforms": ["osx"],
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-svelte",
 			"name": "LSP-svelte",
 			"releases": [
