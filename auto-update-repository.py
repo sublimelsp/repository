@@ -106,6 +106,7 @@ def create_package(
 
 def set_workflow_output(**kwargs: str) -> None:
     for key, value in kwargs.items():
+        # https://github.community/t/set-output-truncates-multiline-strings/16852/3
         value = value.replace("%", "%25")
         value = value.replace("\n", "%0A")
         value = value.replace("\r", "%0D")
