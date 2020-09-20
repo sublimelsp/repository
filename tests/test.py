@@ -19,22 +19,11 @@ import sys
 import unittest
 
 from functools import wraps
+from urllib.request import urlopen
+from urllib.error import HTTPError
+from urllib.parse import urljoin
 
-if sys.version_info >= (3,):
-    from urllib.request import urlopen
-    from urllib.error import HTTPError
-    from urllib.parse import urljoin
-
-    generator_method_type = 'method'
-    str_cls = str
-else:
-    from . import unittest_compat
-    from urlparse import urljoin
-    from urllib2 import HTTPError, urlopen
-
-    unittest_compat.inject_into_unittest()
-    generator_method_type = 'instancemethod'
-    str_cls = unicode  # NOQA (obviously undefined in Py3)
+generator_method_type = 'method'
 
 
 if hasattr(sys, 'argv'):
@@ -129,7 +118,7 @@ def generate_test_methods(cls, stream):
 class CaseInsensitiveDict(dict):
     @classmethod
     def _k(cls, key):
-        return key.lower() if isinstance(key, str_cls) else key
+        return key.lower() if isinstance(key, str) else key
 
     def __getitem__(self, key):
         return super(CaseInsensitiveDict, self).__getitem__(self._k(key))
@@ -233,7 +222,7 @@ class TestContainer(object):
 
         # Check package order
         self.assertEqual(repo_dependency_names,
-                         sorted(repo_dependency_names, key=str_cls.lower),
+                         sorted(repo_dependency_names, key=str.lower),
                          "Dependencies must be sorted alphabetically")
 
     def _test_repository_package_names(self, include, data):
@@ -281,7 +270,7 @@ class TestContainer(object):
 
         # Check package order
         self.assertEqual(repo_package_names,
-                         sorted(repo_package_names, key=str_cls.lower),
+                         sorted(repo_package_names, key=str.lower),
                          "Packages must be sorted alphabetically (by name)")
 
     def _test_indentation(self, filename, contents):
@@ -290,16 +279,16 @@ class TestContainer(object):
                              "Indent must be tabs in line %d" % (i + 1))
 
     package_key_types_map = {
-        'name': str_cls,
-        'details': str_cls,
-        'description': str_cls,
+        'name': str,
+        'details': str,
+        'description': str,
         'releases': list,
-        'homepage': str_cls,
-        'author': (str_cls, list),
-        'readme': str_cls,
-        'issues': str_cls,
-        'donate': (str_cls, type(None)),
-        'buy': str_cls,
+        'homepage': str,
+        'author': (str, list),
+        'readme': str,
+        'issues': str,
+        'donate': (str, type(None)),
+        'buy': str,
         'previous_names': list,
         'labels': list
     }
@@ -369,12 +358,12 @@ class TestContainer(object):
                                          'provided' % key)
 
     dependency_key_types_map = {
-        'name': str_cls,
-        'description': str_cls,
+        'name': str,
+        'description': str,
         'releases': list,
-        'issues': str_cls,
-        'load_order': str_cls,
-        'author': str_cls
+        'issues': str,
+        'load_order': str,
+        'author': str
     }
 
     def _test_dependency(self, include, data):
@@ -397,26 +386,26 @@ class TestContainer(object):
             self.assertIn(key, data, '%r is required for dependencies' % key)
 
     pck_release_key_types_map = {
-        'base': str_cls,
-        'tags': (bool, str_cls),
-        'branch': str_cls,
-        'sublime_text': str_cls,
-        'platforms': (list, str_cls),
-        'dependencies': (list, str_cls),
-        'version': str_cls,
-        'date': str_cls,
-        'url': str_cls
+        'base': str,
+        'tags': (bool, str),
+        'branch': str,
+        'sublime_text': str,
+        'platforms': (list, str),
+        'dependencies': (list, str),
+        'version': str,
+        'date': str,
+        'url': str
     }
 
     dep_release_key_types_map = {
-        'base': str_cls,
-        'tags': (bool, str_cls),
-        'branch': str_cls,
-        'sublime_text': str_cls,
-        'platforms': (list, str_cls),
-        'version': str_cls,
-        'sha256': str_cls,
-        'url': str_cls
+        'base': str,
+        'tags': (bool, str),
+        'branch': str,
+        'sublime_text': str,
+        'platforms': (list, str),
+        'version': str,
+        'sha256': str,
+        'url': str
     }
 
     def _test_release(self, package_name, data, dependency, main_repo=True):
@@ -509,7 +498,7 @@ class TestContainer(object):
                                  'or of the form `<version> - <version>`')
 
             elif k == 'platforms':
-                if isinstance(v, str_cls):
+                if isinstance(v, str):
                     v = [v]
                 for plat in v:
                     self.assertRegex(plat,
@@ -540,7 +529,7 @@ class TestContainer(object):
             elif k == 'tags':
                 self.assertTrue(bool(v),
                                 '"tags" must be `true` or a string of length>0')
-                if isinstance(v, str_cls):
+                if isinstance(v, str):
                     self.assertFalse(v == "true",
                                      'It is unlikely to specify the prefix '
                                      '"true" use not the boolean `true`')
@@ -708,6 +697,7 @@ class TestContainer(object):
         stream.flush()
 
 
+@unittest.skipIf(not os.path.isfile('channel.json'), "No channel.json found")
 class DefaultChannelTests(TestContainer, unittest.TestCase):
     maxDiff = None
 
@@ -719,7 +709,7 @@ class DefaultChannelTests(TestContainer, unittest.TestCase):
     # We need cls.j this for generating tests
     @classmethod
     def pre_generate(cls):
-        if not hasattr(cls, 'j'):
+        if not hasattr(cls, 'j') and os.path.isfile('channel.json'):
             with _open('channel.json') as f:
                 cls.source = f.read().decode('utf-8', 'strict')
                 cls.j = json.loads(cls.source)
@@ -741,7 +731,7 @@ class DefaultChannelTests(TestContainer, unittest.TestCase):
         self.assertIsInstance(self.j['repositories'], list)
 
         for repo in self.j['repositories']:
-            self.assertIsInstance(repo, str_cls)
+            self.assertIsInstance(repo, str)
 
     def test_indentation(self):
         return self._test_indentation('channel.json', self.source)
@@ -752,7 +742,7 @@ class DefaultChannelTests(TestContainer, unittest.TestCase):
             self.assertRegex(repo, r"^(\.|https://)",
                              "Repositories must be relative urls or use the "
                              "HTTPS protocol")
-        self.assertEqual(repos, sorted(repos, key=str_cls.lower),
+        self.assertEqual(repos, sorted(repos, key=str.lower),
                          "Repositories must be sorted alphabetically")
 
     @classmethod
@@ -795,36 +785,44 @@ class DefaultRepositoryTests(TestContainer, unittest.TestCase):
 
     def test_repository_keys(self):
         keys = sorted(self.j.keys())
-        self.assertEqual(keys, ['dependencies', 'includes', 'packages',
-                                'schema_version'])
+        self.assertEqual(keys, ['dependencies', 'packages', 'schema_version'])
 
         self.assertEqual(self.j['schema_version'], '3.0.0')
-        self.assertEqual(self.j['packages'], [])
-        self.assertEqual(self.j['dependencies'], [])
-        self.assertIsInstance(self.j['includes'], list)
 
-        for include in self.j['includes']:
-            self.assertIsInstance(include, str_cls)
+        if 'includes' in self.j:
+            self.assertIsInstance(self.j['includes'], list)
+            for include in self.j['includes']:
+                self.assertIsInstance(include, str)
 
     def test_indentation(self):
         return self._test_indentation('repository.json', self.source)
 
     @classmethod
     def generate_include_tests(cls, stream):
-        for include in cls.j['includes']:
-            try:
-                with _open(include) as f:
-                    contents = f.read().decode('utf-8', 'strict')
-                data = json.loads(contents)
-            except Exception as e:
-                yield cls._fail("strict while reading %r" % include, e)
-                continue
+        package_lists = []
+        if 'packages' in cls.j:
+            package_lists.append(('repository.json', cls.j))
 
-            # `include` is for output during tests only
-            yield cls._test_indentation, (include, contents)
-            yield cls._test_repository_keys, (include, data)
-            yield cls._test_repository_package_names, (include, data)
+        if 'includes' in cls.j:
+            for include in cls.j['includes']:
+                try:
+                    with _open(include) as f:
+                        contents = f.read().decode('utf-8', 'strict')
+                    data = json.loads(contents)
+                except Exception as e:
+                    yield cls._fail("strict while reading %r" % include, e)
+                    continue
 
+                # `include` is for output during tests only
+                yield cls._test_indentation, (include, contents)
+                yield cls._test_repository_keys, (include, data)
+                yield cls._test_repository_package_names, (include, data)
+                package_lists.append((include, data))
+                if 'dependencies' in data:
+                    yield cls._test_dependency_names, (include, data)
+
+        for package_list in package_lists:
+            include, data = package_list
             for package in data['packages']:
                 yield cls._test_package, (include, package)
 
@@ -838,8 +836,6 @@ class DefaultRepositoryTests(TestContainer, unittest.TestCase):
                              False))
 
             if 'dependencies' in data:
-                yield cls._test_dependency_names, (include, data)
-
                 for dependency in data['dependencies']:
                     yield cls._test_dependency, (include, dependency)
 
