@@ -20,6 +20,7 @@ import json
 import os
 import pathlib
 import sys
+import urllib
 
 
 def extract_platform_from_asset_name(name: str) -> str:
@@ -106,7 +107,8 @@ def create_package(
 
 def set_workflow_output(**kwargs: str) -> None:
     for key, value in kwargs.items():
-        print("::set-output name={}::'{}'".format(key, value))
+        escaped_value = urllib.parse.quote(value)
+        print("::set-output name={}::{}".format(key, escaped_value))
 
 
 def main() -> None:
@@ -143,7 +145,7 @@ def main() -> None:
     set_workflow_output(
         commit_message="{}\n\n{}".format(commit_title, release["body"]),
         pr_title=commit_title,
-        pr_body="Repo link: {}\n\n{}".format(
+        pr_body="## Repo link\n{}\n\n## Release body\n{}".format(
             payload["details"], release["body"])
     )
 
