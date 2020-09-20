@@ -138,6 +138,7 @@ def main() -> None:
         create_package(repository, payload)
     with repository_path.open("w") as fp:
         json.dump(repository, fp, indent="\t", sort_keys=True)
+        fp.write("\n")
     commit_title = "Update {}".format(name) if found else "Add {}".format(name)
     set_workflow_output(
         commit_message="{}\n\n{}".format(commit_title, release["body"]),
