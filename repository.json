@@ -142,6 +142,20 @@
 			]
 		},
 		{
+			"name": "LSP-lemminx",
+			"details": "https://github.com/sublimelsp/LSP-lemminx",
+			"releases": [
+				{
+					"sublime_text": "3154 - 4069",
+					"tags": "st3-"
+				},
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/scalameta/metals-sublime",
 			"name": "LSP-metals",
 			"releases": [
