@@ -58,6 +58,16 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-bash",
+			"name": "LSP-bash2",
+			"releases": [
+				{
+					"sublime_text": ">=3092",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-css",
 			"name": "LSP-css",
 			"releases": [
