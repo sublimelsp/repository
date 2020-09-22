@@ -1,0 +1,9 @@
+cache_length: 600
+debug: true
+timeout: 10
+user_agent: Package Control Default Channel Server
+install_prereleases: true
+downloader_precedence:
+    windows: [wininet, oscrypto]
+    osx: [oscrypto, urllib, curl]
+    linux: [oscrypto, urllib, curl, wget]
