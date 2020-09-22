@@ -1,0 +1,15 @@
+name: On Push To Main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run repository tests
+        run: python3 -m unittest
