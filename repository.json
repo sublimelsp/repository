@@ -166,11 +166,7 @@
 			"name": "LSP-pyright",
 			"releases": [
 				{
-					"sublime_text": "3154 - 4069",
-					"tags": "st3-"
-				},
-				{
-					"sublime_text": ">=4070",
+					"sublime_text": ">=3154",
 					"tags": true
 				}
 			]
