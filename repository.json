@@ -38,6 +38,21 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-PowerShellEditorServices",
+			"name": "LSP-PowerShellEditorServices",
+			"releases": [
+				{
+					"date": "2020-09-22 18:22:44",
+					"platforms": [
+						"LSP-PowerShellEditorServices"
+					],
+					"sublime_text": ">=3154",
+					"url": "https://github.com/sublimelsp/LSP-PowerShellEditorServices/releases/download/v1.1.0/LSP-PowerShellEditorServices.zip",
+					"version": "v1.1.0"
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-angular",
 			"name": "LSP-angular",
 			"releases": [
