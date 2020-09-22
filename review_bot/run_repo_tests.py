@@ -14,7 +14,7 @@ import imp
 from .package_control.providers import RepositoryProvider
 from .package_control.download_manager import downloader, close_all_connections
 from .package_control.downloaders.downloader_exception import DownloaderException
-from .. import config
+from . import config
 from .st_package_reviewer.check import file as file_checkers
 from .st_package_reviewer.check.file.check_messages import CheckMessages
 from .st_package_reviewer.check.file.check_resource_files import CheckHasSublimeSyntax
@@ -36,12 +36,6 @@ for spr_mod in ('', '.check', '.check.file', '.check.file.ast'):
 
 def downloader_settings():
     settings = config.read('crawler')
-    if 'query_string_params' in settings and \
-            'api.github.com' in settings['query_string_params']:
-        settings['query_string_params']['api.github.com']['client_id'] = \
-            config.read_secret('github_client_id')
-        settings['query_string_params']['api.github.com']['client_secret'] = \
-            config.read_secret('github_client_secret')
     settings['debug'] = False
     return settings
 
@@ -222,9 +216,6 @@ def fetch_package_metadata(spec):
 
     def clean_message(exception):
         error = exception.args[0]
-        for param, value in settings['query_string_params']['api.github.com'].items():
-            regex = '[?&]' + re.escape(param) + '=' + re.escape(value)
-            error = re.sub(regex, '', error)
         return error.replace(' in the repository https://example.com', '')
 
     provider = RepositoryProvider('https://example.com', settings)
@@ -251,12 +242,12 @@ def fetch_package_metadata(spec):
         close_all_connections()
 
 
-def run(cmd, path):
+def run(cmd, cwd=None):
     proc = subprocess.Popen(
         cmd,
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
-        cwd=path
+        cwd=cwd
     )
     stdout, _ = proc.communicate()
     stdout = stdout.decode('utf-8').strip()
@@ -271,7 +262,7 @@ def package_name(data):
         return os.path.basename(data['details'])
 
 
-def github_api_request(settings, url, data=None):
+def github_api_request(settings, token, url, data=None):
     """
     Performs a request to the github api using urllib
 
@@ -288,8 +279,7 @@ def github_api_request(settings, url, data=None):
         A urllib.request.Response object
     """
 
-    github_pac = config.read_secret('github_personal_access_token')
-    auth_string = base64.encodestring(b'packagecontrol-bot:' + github_pac.encode('utf-8'))
+    auth_string = base64.encodestring(b'packagecontrol-bot:' + token.encode('utf-8'))
     auth_header = 'Basic %s' % auth_string.decode('utf-8').strip().replace('\n', '')
     headers = {
         'Authorization': auth_header,
@@ -309,48 +299,8 @@ def github_api_request(settings, url, data=None):
     return urlopen(req)
 
 
-def test_pull_request(pr):
-    """
-    Test a pull request on https://github.com/wbond/package_control_channel
-    """
-
-    pr = int(pr)
+def test_pull_request(pr_url: str, old_rev: str, token: str):
     settings = downloader_settings()
-
-    pr_url = 'https://api.github.com/repos/wbond/package_control_channel/pulls/%d' % pr
-    try:
-        res = github_api_request(settings, pr_url)
-        pr_details = json.loads(res.read().decode('utf-8'))
-        if 'state' not in pr_details:
-            return {
-                '__status_code__': 500,
-                'result': 'error',
-                'message': 'Unexpected format to PR details'
-            }
-        if pr_details['state'] != 'open':
-            return {
-                '__status_code__': 500,
-                'result': 'error',
-                'message': 'PR has already been closed'
-            }
-    except URLError as e:
-        return {
-            '__status_code__': 500,
-            'result': 'error',
-            'message': 'Error fetching PR details - %s' % str(e)
-        }
-    except UnicodeDecodeError:
-        return {
-            '__status_code__': 500,
-            'result': 'error',
-            'message': 'Error decoding PR details'
-        }
-    except ValueError:
-        return {
-            '__status_code__': 500,
-            'result': 'error',
-            'message': 'Error parsing PR details'
-        }
 
     tmpdir = None
     try:
@@ -358,46 +308,13 @@ def test_pull_request(pr):
         if not tmpdir:
             raise EnvironmentError('Unable to create tmpdir')
 
-        code, res = run(['git', 'clone', 'https://github.com/wbond/package_control_channel.git'], tmpdir)
-        if code != 0:
-            return {
-                '__status_code__': 500,
-                'result': 'error',
-                'message': 'Unable to clone https://github.com/wbond/package_control_channel'
-            }
-
-        channel_dir = os.path.join(tmpdir, 'package_control_channel')
-        code, res = run(['git', 'fetch', '-q', 'origin', 'pull/%d/head:pr-%d' % (pr, pr)], channel_dir)
-        if code != 0:
-            return {
-                '__status_code__': 500,
-                'result': 'error',
-                'message': 'Unable to fetch https://github.com/wbond/package_control_channel/pull/%d' % pr
-            }
-
-        code, res = run(['git', 'checkout', '-q', 'pr-%d' % pr], channel_dir)
-        if code != 0:
-            return {
-                '__status_code__': 500,
-                'result': 'error',
-                'message': 'Unable to checkout https://github.com/wbond/package_control_channel/pull/%d' % pr
-            }
-
-        code, old_rev = run(['git', 'merge-base', 'master', 'pr-%d' % pr], channel_dir)
-        if code != 0:
-            return {
-                '__status_code__': 500,
-                'result': 'error',
-                'message': 'Unable to find merge base for https://github.com/wbond/package_control_channel/pull/%d' % pr
-            }
-
         filenames = []
-        code, files_changed = run(['git', 'diff', '--name-status', old_rev], channel_dir)
+        code, files_changed = run(['git', 'diff', '--name-status', old_rev])
         if code != 0:
             return {
                 '__status_code__': 500,
                 'result': 'error',
-                'message': 'Unable to diff https://github.com/wbond/package_control_channel/pull/%d' % pr
+                'message': 'Unable to diff %s..%s' % (old_rev, 'HEAD')
             }
 
         for line in files_changed.splitlines():
@@ -411,7 +328,8 @@ def test_pull_request(pr):
             status, filename = parts
             if not filename.endswith('.json'):
                 continue
-            if not re.match(r'repository/(\w|0-9)\.json$', filename) and filename != 'channel.json':
+            if not re.match(r'repository/(\w|0-9)\.json$', filename) and filename != 'repository.json' \
+                    and filename != 'channel.json':
                 continue
             if status != 'M':
                 return {
@@ -433,14 +351,13 @@ def test_pull_request(pr):
         removed_repositories = set()
 
         for filename in filenames:
-            code, old_version = run(['git', 'show', '%s:%s' % (old_rev, filename)], channel_dir)
-            code, new_version = run(['git', 'show', 'HEAD:%s' % filename], channel_dir)
+            code, old_version = run(['git', 'show', '%s:%s' % (old_rev, filename)])
+            code, new_version = run(['git', 'show', 'HEAD:%s' % filename])
             old_json = json.loads(old_version)
             new_json = json.loads(new_version)
             if filename == 'channel.json':
                 removed_repositories = set(old_json['repositories']) - set(new_json['repositories'])
                 added_repositories = set(new_json['repositories']) - set(old_json['repositories'])
-
             else:
                 old_packages = [json.dumps(p) for p in old_json['packages']]
                 new_packages = [json.dumps(p) for p in new_json['packages']]
@@ -607,14 +524,15 @@ def test_pull_request(pr):
         if errors or warnings:
             comment.append('[Results help](https://github.com/packagecontrol/st_package_reviewer/wiki/Package-checks)')
             comment.append('')
-        comment.append('```')
-        comment += output
-        comment.append('```')
+        if output:
+            comment.append('```')
+            comment += output
+            comment.append('```')
 
-        comment_url = 'https://api.github.com/repos/wbond/package_control_channel/pulls/%d/reviews' % pr
+        comment_url = '%s/reviews' % pr_url
 
         try:
-            res = github_api_request(settings, comment_url, {'body': '\n'.join(comment), 'event': event})
+            res = github_api_request(settings, token, comment_url, {'body': '\n'.join(comment), 'event': event})
             if res.getcode() != 200:
                 return {
                     '__status_code__': 500,

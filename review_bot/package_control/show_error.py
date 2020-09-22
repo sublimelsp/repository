@@ -1,8 +1,5 @@
 # Not shared with Package Control
 
-import rollbar
-
-from ... import env
 from . import text
 
 
@@ -26,7 +23,4 @@ def show_error(string, params=None, strip=True, indent=None):
 
     string = text.format(string, params, strip=strip, indent=indent)
 
-    if env.is_prod():
-        rollbar.report_message(string, 'error')
-    else:
-        print('ERROR: %s' % string)
+    print('ERROR: %s' % string)

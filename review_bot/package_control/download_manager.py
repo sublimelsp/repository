@@ -28,7 +28,6 @@ from .downloaders.rate_limit_exception import RateLimitException
 from .downloaders.downloader_exception import DownloaderException
 from .downloaders.win_downloader_exception import WinDownloaderException
 from .downloaders.oscrypto_downloader_exception import OscryptoDownloaderException
-from .http_cache import HttpCache
 
 
 # A dict of domains - each points to a list of downloaders
@@ -179,9 +178,6 @@ class DownloadManager(object):
             settings['user_agent'] = user_agent % __version__
 
         self.settings = settings
-        if settings.get('http_cache'):
-            cache_length = settings.get('http_cache_length', 604800)
-            self.settings['cache'] = HttpCache(cache_length)
 
     def close(self):
         if self.downloader:
