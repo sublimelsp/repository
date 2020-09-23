@@ -8,7 +8,7 @@
 			"name": "lsp_utils",
 			"releases": [
 				{
-					"base": "https://github.com/sublimelsp/lsp_utils",
+					"base": "https://github.com/sublimelsp/lsp_utils2",
 					"sublime_text": ">=3000",
 					"tags": true
 				}
