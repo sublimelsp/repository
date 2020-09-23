@@ -1,0 +1,14 @@
+name: On Push To Main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: sublimelsp/st-schema-reviewer-action@v1
