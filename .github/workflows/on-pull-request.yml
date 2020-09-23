@@ -3,21 +3,13 @@ name: On PR
 on: [pull_request_target]
 
 jobs:
-  tests:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Run repository tests
-        run: python3 -m unittest tests/test.py
-
   trigger-review:
-    needs: tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
-            fetch-depth: 0
+          fetch-depth: 0
+          ref: refs/pull/${{ github.event.pull_request.number }}/merge
 
       # Ensures python3-setuptools is installed
       - name: Setup Python
