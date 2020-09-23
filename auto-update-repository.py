@@ -14,12 +14,25 @@ TODO: The sublime_text version range should be extracted from JSON.
 """
 
 from typing import Dict, Any
-import argparse
 import functools
 import json
 import os
 import pathlib
 import sys
+
+
+def st_version_range_from_release_body(body: str) -> str:
+    """
+    Retrieves the `"sublime_text"` value from the text in the release. If your
+    release text contains a line that starts with "Sublime-Text-Version-Range"
+    then it's assumed that that's what we need to extract. Otherwise, this
+    function defaults to returning the most recent minimal version range.
+    """
+    prefix = "Sublime-Text-Version-Range: "
+    for line in body.splitlines():
+        if line.startswith(prefix):
+            return line[len(prefix):]
+    return ">=3154"
 
 
 def extract_platform_from_asset_name(name: str) -> str:
@@ -117,15 +130,14 @@ def set_workflow_output(**kwargs: str) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--sublime-text-version-range", default=">=3154")
-    args = parser.parse_args()
     source = json.load(sys.stdin)
     release = source["release"]
     tag_name = release["tag_name"]
     date = translate_date(release["published_at"])
+    body = release["body"]
+    st_version_range = st_version_range_from_release_body(body)
     f = functools.partial(translate_release_asset,
-                          args.sublime_text_version_range, tag_name, date)
+                          st_version_range, tag_name, date)
     payload = {
         "releases": [f(asset) for asset in release["assets"]],
         "name": source["repository"]["name"],
@@ -148,10 +160,10 @@ def main() -> None:
         fp.write("\n")
     commit_title = "Update {}".format(name) if found else "Add {}".format(name)
     set_workflow_output(
-        commit_message="{}\n\n{}".format(commit_title, release["body"]),
+        commit_message="{}\n\n{}".format(commit_title, body),
         pr_title=commit_title,
         pr_body="## Repo link\n{}\n\n## Release body\n{}".format(
-            payload["details"], release["body"])
+            payload["details"], body)
     )
 
 
