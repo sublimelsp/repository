@@ -64,7 +64,8 @@
 				{
 					"branch": "An issue",
 					"sublime_text": ">=3092",
-					"tags": true
+					"tags": true,
+					"url": "http://foo.com"
 				}
 			]
 		},
