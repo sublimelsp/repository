@@ -39,7 +39,10 @@ def extract_platform_from_asset_name(name: str) -> str:
     - `linux-x32`
     - `linux-x64`
     """
-    return name.split(".")[-2].split("_")[-1]
+    for needle in ("_windows", "_osx", "_linux"):
+        if needle in name:
+            return name.split(".")[-2].split("_")[-1]
+    return "*"
 
 
 def translate_date(gh_date: str) -> str:
@@ -68,7 +71,7 @@ def translate_release_asset(
         exit(1)
     return {
         "url": asset["browser_download_url"],
-        "platforms": [extract_platform_from_asset_name(name)],
+        "platforms": extract_platform_from_asset_name(name),
         "date": date,
         "version": tag_name,
         "sublime_text": sublime_text_version_range
