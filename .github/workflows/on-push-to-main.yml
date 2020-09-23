@@ -11,5 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Run repository tests
-        run: python3 -m unittest tests/test.py
+      - uses: sublimelsp/st-schema-reviewer-action@v1
