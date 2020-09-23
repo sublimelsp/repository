@@ -10,6 +10,6 @@ jobs:
         run: |
           curl -X POST ${{ github.event.pull_request.url }}/reviews \
           -H 'Accept: application/vnd.github.v3+json' \
-          -H 'Authorization: token ${{ secrets.GITHUB_TOKEN }}' \
-          -H 'User-Agent: Sublime LSP \
+          -H 'Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
+          -H 'User-Agent: Sublime LSP' \
           -data '{"event_type": "REQUEST_CHANGES", "body": "Test comment"}'
