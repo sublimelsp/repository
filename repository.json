@@ -112,6 +112,16 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-flow",
+			"name": "LSP-flow",
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-html",
 			"name": "LSP-html",
 			"releases": [
