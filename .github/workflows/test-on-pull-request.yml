@@ -13,4 +13,4 @@ jobs:
           -H 'Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
           -H 'User-Agent: Sublime LSP' \
           -H 'Content-Type: application/vnd.github.v3+json' \
-          -d '{"event_type": "REQUEST_CHANGES", "body": "Test comment"}'
+          -d '{"event": "REQUEST_CHANGES", "body": "Test comment"}'
