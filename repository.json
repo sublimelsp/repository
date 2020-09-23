@@ -62,6 +62,7 @@
 			"name": "LSP-bash2",
 			"releases": [
 				{
+					"branch": "An issue",
 					"sublime_text": ">=3092",
 					"tags": true
 				}
