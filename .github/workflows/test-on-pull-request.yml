@@ -1,0 +1,15 @@
+name: On PR (TEST)
+
+on: [pull_request_target]
+
+jobs:
+  trigger-review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create test comment
+        run: |
+          curl -X POST ${{ github.event.pull_request.url }}/reviews \
+          -H 'Accept: application/vnd.github.v3+json' \
+          -H 'Authorization: token ${{ secrets.GITHUB_TOKEN }}' \
+          -H 'User-Agent: Sublime LSP \
+          -data '{"event_type": "REQUEST_CHANGES", "body": "Test comment"}'
