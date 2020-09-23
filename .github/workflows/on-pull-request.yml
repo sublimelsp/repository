@@ -1,6 +1,6 @@
 name: On PR
 
-on: [pull_request]
+on: [pull_request_target]
 
 jobs:
   tests:
@@ -28,9 +28,8 @@ jobs:
       - name: Install Python dependencies
         run: python3 -m pip install pyyaml git+https://github.com/packagecontrol/st_package_reviewer.git@d2b43530442f227751c925d259df8fb324eee18f
 
-      - name: Trigger package review
-        run: |
-          python3 review-bot.py \
-          --pr-url ${{ github.event.pull_request.url }} \
-          --base-sha ${{ github.event.pull_request.base.sha }} \
-          --token ${{ secrets.GITHUB_TOKEN }}
+      - uses: sublimelsp/review-bot-action@v1
+        with:
+          pr-url: ${{ github.event.pull_request.url }}
+          base-sha: ${{ github.event.pull_request.base.sha }}
+          token: ${{ secrets.GITHUB_TOKEN }}
