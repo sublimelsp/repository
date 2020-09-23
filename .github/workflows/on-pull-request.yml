@@ -6,6 +6,8 @@ jobs:
   trigger-review:
     runs-on: ubuntu-latest
     steps:
+      - run: cat <<<'${{ toJson(github.event.pull_request) }}'
+
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
