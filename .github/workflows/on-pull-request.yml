@@ -1,6 +1,8 @@
 name: On PR
 
-on: [pull_request_target]
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, review_requested]
 
 jobs:
   trigger-review:
