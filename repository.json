@@ -112,6 +112,16 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-graphql",
+			"name": "LSP-graphql",
+			"releases": [
+				{
+					"sublime_text": ">=3092",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-html",
 			"name": "LSP-html",
 			"releases": [
