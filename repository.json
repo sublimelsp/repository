@@ -173,14 +173,34 @@
 		},
 		{
 			"details": "https://github.com/alihsaas/LSP-robloxluau",
-			"labels": [
-				"lsp", "roblox", "luau"
-			],
 			"name": "LSP-robloxluau",
 			"releases": [
 				{
+					"date": "2020-09-30 19:03:22",
+					"platforms": [
+						"linux-x64"
+					],
 					"sublime_text": ">=4070",
-					"tags": true
+					"url": "https://github.com/alihsaas/LSP-robloxluau/releases/download/v0.0.1/LSP-robloxluau_linux-x64.zip",
+					"version": "v0.0.1"
+				},
+				{
+					"date": "2020-09-30 19:03:22",
+					"platforms": [
+						"osx-x64"
+					],
+					"sublime_text": ">=4070",
+					"url": "https://github.com/alihsaas/LSP-robloxluau/releases/download/v0.0.1/LSP-robloxluau_osx-x64.zip",
+					"version": "v0.0.1"
+				},
+				{
+					"date": "2020-09-30 19:03:22",
+					"platforms": [
+						"windows-x64"
+					],
+					"sublime_text": ">=4070",
+					"url": "https://github.com/alihsaas/LSP-robloxluau/releases/download/v0.0.1/LSP-robloxluau_windows-x64.zip",
+					"version": "v0.0.1"
 				}
 			]
 		},
