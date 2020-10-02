@@ -180,7 +180,7 @@
 					"platforms": [
 						"linux-x64"
 					],
-					"sublime_text": ">=3154",
+					"sublime_text": ">=4070",
 					"url": "https://github.com/alihsaas/LSP-robloxluau/releases/download/v0.0.2/LSP-robloxluau_linux-x64.zip",
 					"version": "v0.0.2"
 				},
@@ -189,7 +189,7 @@
 					"platforms": [
 						"osx-x64"
 					],
-					"sublime_text": ">=3154",
+					"sublime_text": ">=4070",
 					"url": "https://github.com/alihsaas/LSP-robloxluau/releases/download/v0.0.2/LSP-robloxluau_osx-x64.zip",
 					"version": "v0.0.2"
 				},
@@ -198,7 +198,7 @@
 					"platforms": [
 						"windows-x64"
 					],
-					"sublime_text": ">=3154",
+					"sublime_text": ">=4070",
 					"url": "https://github.com/alihsaas/LSP-robloxluau/releases/download/v0.0.2/LSP-robloxluau_windows-x64.zip",
 					"version": "v0.0.2"
 				}
