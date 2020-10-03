@@ -162,6 +162,33 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-lua",
+			"name": "LSP-lua",
+			"releases": [
+				{
+					"date": "2020-10-03 12:18:50",
+					"platforms": "linux-x64",
+					"sublime_text": ">=4070",
+					"url": "https://github.com/sublimelsp/LSP-lua/releases/download/v0.0.4/LSP-lua_linux-x64.zip",
+					"version": "v0.0.4"
+				},
+				{
+					"date": "2020-10-03 12:18:50",
+					"platforms": "osx-x64",
+					"sublime_text": ">=4070",
+					"url": "https://github.com/sublimelsp/LSP-lua/releases/download/v0.0.4/LSP-lua_osx-x64.zip",
+					"version": "v0.0.4"
+				},
+				{
+					"date": "2020-10-03 12:18:50",
+					"platforms": "windows-x64",
+					"sublime_text": ">=4070",
+					"url": "https://github.com/sublimelsp/LSP-lua/releases/download/v0.0.4/LSP-lua_windows-x64.zip",
+					"version": "v0.0.4"
+				}
+			]
+		},
+		{
 			"details": "https://github.com/scalameta/metals-sublime",
 			"name": "LSP-metals",
 			"releases": [
