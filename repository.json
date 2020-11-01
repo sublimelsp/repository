@@ -162,8 +162,8 @@
 			]
 		},
 		{
-			"name": "LSP-lemminx",
 			"details": "https://github.com/sublimelsp/LSP-lemminx",
+			"name": "LSP-lemminx",
 			"releases": [
 				{
 					"sublime_text": "3154 - 4069",
@@ -172,6 +172,33 @@
 				{
 					"sublime_text": ">=4070",
 					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-lua",
+			"name": "LSP-lua",
+			"releases": [
+				{
+					"date": "2020-11-01 20:47:09",
+					"platforms": "linux-x64",
+					"sublime_text": ">=4070",
+					"url": "https://github.com/sublimelsp/LSP-lua/releases/download/v0.0.5/LSP-lua_linux-x64.zip",
+					"version": "v0.0.5"
+				},
+				{
+					"date": "2020-11-01 20:47:09",
+					"platforms": "osx-x64",
+					"sublime_text": ">=4070",
+					"url": "https://github.com/sublimelsp/LSP-lua/releases/download/v0.0.5/LSP-lua_osx-x64.zip",
+					"version": "v0.0.5"
+				},
+				{
+					"date": "2020-11-01 20:47:09",
+					"platforms": "windows-x64",
+					"sublime_text": ">=4070",
+					"url": "https://github.com/sublimelsp/LSP-lua/releases/download/v0.0.5/LSP-lua_windows-x64.zip",
+					"version": "v0.0.5"
 				}
 			]
 		},
