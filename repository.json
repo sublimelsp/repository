@@ -152,6 +152,19 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-jdtls",
+			"name": "LSP-jdtls",
+			"releases": [
+				{
+					"date": "2020-11-28 13:57:00",
+					"platforms": "*",
+					"sublime_text": ">=4070",
+					"url": "https://github.com/sublimelsp/LSP-jdtls/releases/download/v1.0.0/LSP-jdtls.zip",
+					"version": "v1.0.0"
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-json",
 			"name": "LSP-json",
 			"releases": [
@@ -162,8 +175,8 @@
 			]
 		},
 		{
-			"name": "LSP-lemminx",
 			"details": "https://github.com/sublimelsp/LSP-lemminx",
+			"name": "LSP-lemminx",
 			"releases": [
 				{
 					"sublime_text": "3154 - 4069",
