@@ -180,7 +180,7 @@
 			"name": "LSP-ltex-ls",
 			"releases": [
 				{
-					"sublime_text": ">=3154",
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]
