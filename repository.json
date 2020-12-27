@@ -339,6 +339,21 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-lua",
+			"name": "LSP-lua",
+			"releases": [
+				{
+					"platforms": [
+						"windows-x64",
+						"osx-x64",
+						"linux-x64"
+					],
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/scalameta/metals-sublime",
 			"name": "LSP-metals",
 			"labels": [
