@@ -162,6 +162,16 @@
 			]
 		},
 		{
+			"details": "https://github.com/devnix/LSP-json-composer",
+			"name": "LSP-json-composer",
+			"releases": [
+				{
+					"sublime_text": ">=3092",
+					"tags": true
+				}
+			]
+		},
+		{
 			"name": "LSP-lemminx",
 			"details": "https://github.com/sublimelsp/LSP-lemminx",
 			"releases": [
