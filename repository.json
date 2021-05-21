@@ -371,6 +371,23 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-OmniSharp",
+			"name": "LSP-OmniSharp",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/prometheus-community/sublimelsp-promql",
 			"name": "LSP-promql",
 			"labels": [
