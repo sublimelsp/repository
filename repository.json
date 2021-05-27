@@ -196,8 +196,8 @@
 			]
 		},
 		{
-			"details": "https://github.com/sublimelsp/LSP-pyls",
-			"name": "LSP-pyls",
+			"details": "https://github.com/sublimelsp/LSP-pylsp",
+			"name": "LSP-pylsp",
 			"releases": [
 				{
 					"sublime_text": ">=3154",
