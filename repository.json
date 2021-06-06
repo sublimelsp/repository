@@ -467,7 +467,10 @@
 			"releases": [
 				{
 					"sublime_text": ">=4070",
-					"platforms": ["osx"],
+					"platforms": [
+						"linux",
+						"osx"
+					],
 					"tags": true
 				}
 			]
