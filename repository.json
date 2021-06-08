@@ -581,7 +581,25 @@
 					"tags": true
 				}
 			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/lsp-rust-analyzer",
+			"name": "LSP-rust-analyzer",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=3092",
+					"tags": true
+				}
+			]
 		}
+			
 	],
 	"schema_version": "3.0.0"
 }
