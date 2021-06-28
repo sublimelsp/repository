@@ -538,6 +538,20 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-tailwindcss",
+			"name": "LSP-tailwindcss",
+			"labels": [
+				"auto-complete",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=3092",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-TexLab",
 			"name": "LSP-TexLab",
 			"labels": [
