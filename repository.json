@@ -112,6 +112,23 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-Bicep",
+			"name": "LSP-Bicep",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-Dart",
 			"name": "LSP-Dart",
 			"labels": [
