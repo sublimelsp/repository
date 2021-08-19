@@ -623,6 +623,33 @@
 					"tags": true
 				}
 			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-leo",
+			"name": "LSP-leo",
+			"author": "aleohq",
+			"homepage": "http://leo-lang.org/",
+			"readme": "https://leo-lsp-packages.sfo2.digitaloceanspaces.com/sublime-package/latest/README.md",
+			"issues": "https://github.com/AleoHQ/leo-plugins/issues",
+			"description": "A leo language features extension.",
+			"labels": [
+				"aleo",
+				"leo",
+				"auto-complete",
+				"linting",
+				"code navigation",
+				"intellisense",
+				"color scheme",
+				"language syntax",
+				"snippets",
+				"theme"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
 		}
 	],
 	"schema_version": "3.0.0"
