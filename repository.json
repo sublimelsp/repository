@@ -629,7 +629,7 @@
 			"name": "LSP-leo",
 			"author": "aleohq",
 			"homepage": "http://leo-lang.org/",
-			"readme": "https://leo-lsp-packages.sfo2.digitaloceanspaces.com/sublime-package/latest/README.md",
+			"readme": "https://raw.githubusercontent.com/sublimelsp/LSP-leo/master/README.md",
 			"issues": "https://github.com/AleoHQ/leo-plugins/issues",
 			"description": "A leo language features extension.",
 			"labels": [
