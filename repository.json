@@ -460,6 +460,23 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-rust-analyzer",
+			"name": "LSP-rust-analyzer",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/Cloudstek/LSP-serenata",
 			"name": "LSP-serenata",
 			"labels": [
