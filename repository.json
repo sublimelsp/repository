@@ -501,9 +501,10 @@
 						"osx-x64",
 						"linux-x64"
 					],
-        }
-      ]
-     },
+        			}
+      			]
+     		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-R",
 			"name": "LSP-R",
 			"releases": [
