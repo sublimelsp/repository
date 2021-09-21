@@ -1,6 +1,8 @@
 name: On PR
 
-on: [pull_request_target]
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, review_requested]
 
 jobs:
   trigger-review:
@@ -26,4 +28,5 @@ jobs:
         with:
           pr-url: ${{ github.event.pull_request.url }}
           base-sha: ${{ github.event.pull_request.base.sha }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          current-sha: ${{ github.event.pull_request.head.sha }}
+          token: ${{ secrets.STREVIEWBOT_PERSONAL_ACCESS_TOKEN }}
