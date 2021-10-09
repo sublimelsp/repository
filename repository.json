@@ -353,6 +353,24 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-julia",
+			"name": "LSP-julia",
+			"labels": [
+				"julia",
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4095",
+					"tags": true
+				}
+			]
+		},
+		{
 			"name": "LSP-lemminx",
 			"details": "https://github.com/sublimelsp/LSP-lemminx",
 			"labels": [
