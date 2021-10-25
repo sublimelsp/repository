@@ -268,6 +268,23 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-gopls",
+			"name": "LSP-gopls",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=3092",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-graphql",
 			"name": "LSP-graphql",
 			"labels": [
