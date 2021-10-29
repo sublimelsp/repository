@@ -656,6 +656,28 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-Terraform",
+			"name": "LSP-Terraform",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"platforms": [
+						"windows-x64",
+						"osx-x64",
+						"linux-x64"
+					],
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-TexLab",
 			"name": "LSP-TexLab",
 			"labels": [
