@@ -656,8 +656,8 @@
 			]
 		},
 		{
-			"details": "https://github.com/sublimelsp/LSP-Terraform",
-			"name": "LSP-Terraform",
+			"details": "https://github.com/sublimelsp/LSP-terraform",
+			"name": "LSP-terraform",
 			"labels": [
 				"auto-complete",
 				"linting",
