@@ -5,7 +5,7 @@ on: [repository_dispatch]
 jobs:
   create-pull-request:
     if: github.event.action == 'lsp-add-or-update-package'
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - id: make-pr
