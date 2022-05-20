@@ -285,6 +285,19 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-Grammarly",
+			"name": "LSP-Grammarly",
+			"labels": [
+				"linting"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-graphql",
 			"name": "LSP-graphql",
 			"labels": [
