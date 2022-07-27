@@ -129,6 +129,21 @@
 			]
 		},
 		{
+			"details": "https://github.com/TheSecEng/LSP-copilot",
+			"name": "LSP-copilot",
+			"labels": [
+				"auto-complete",
+				"code-intelligence",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4126",
+					"tags": "4126-"
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-Dart",
 			"name": "LSP-Dart",
 			"labels": [
@@ -687,7 +702,9 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-terraform",
 			"name": "LSP-terraform",
-			"previous_names": ["LSP-Terraform"],
+			"previous_names": [
+				"LSP-Terraform"
+			],
 			"labels": [
 				"auto-complete",
 				"linting",
