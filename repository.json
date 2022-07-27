@@ -95,6 +95,22 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-astro",
+			"name": "LSP-astro",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-bash",
 			"name": "LSP-bash",
 			"labels": [
