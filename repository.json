@@ -18,6 +18,17 @@
 	"packages": [
 		{
 			"details": "https://github.com/sublimelsp/LSP",
+			"name": "LSP",
+			"releases": [
+				{
+					"sublime_text": "3154 - 4069",
+					"tags": "3154-"
+				},
+				{
+					"sublime_text": ">=4070",
+					"tags": "4070-"
+				}
+			],
 			"labels": [
 				"auto-complete",
 				"linting",
@@ -54,27 +65,6 @@
 				"objectivec",
 				"method completion",
 				"intellicode"
-			],
-			"name": "LSP",
-			"releases": [
-				{
-					"sublime_text": "3154 - 4069",
-					"tags": "3154-"
-				},
-				{
-					"sublime_text": ">=4070",
-					"tags": "4070-"
-				}
-			]
-		},
-		{
-			"details": "https://github.com/sublimelsp/LSP-PowerShellEditorServices",
-			"name": "LSP-PowerShellEditorServices",
-			"releases": [
-				{
-					"sublime_text": ">=4070",
-					"tags": true
-				}
 			]
 		},
 		{
@@ -90,6 +80,22 @@
 			"releases": [
 				{
 					"sublime_text": ">=3154",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-astro",
+			"name": "LSP-astro",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]
@@ -139,7 +145,24 @@
 			"releases": [
 				{
 					"sublime_text": ">=4126",
-					"tags": "4126-"
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-css",
+			"name": "LSP-css",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=3092",
+					"tags": true
 				}
 			]
 		},
@@ -173,23 +196,6 @@
 			"releases": [
 				{
 					"sublime_text": ">=4070",
-					"tags": true
-				}
-			]
-		},
-		{
-			"details": "https://github.com/sublimelsp/LSP-css",
-			"name": "LSP-css",
-			"labels": [
-				"auto-complete",
-				"linting",
-				"formatting",
-				"code navigation",
-				"intellisense"
-			],
-			"releases": [
-				{
-					"sublime_text": ">=3092",
 					"tags": true
 				}
 			]
@@ -520,6 +526,16 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-PowerShellEditorServices",
+			"name": "LSP-PowerShellEditorServices",
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/Sublime-Instincts/LSP-prisma",
 			"name": "LSP-prisma",
 			"labels": [
@@ -625,19 +641,6 @@
 			]
 		},
 		{
-			"details": "https://github.com/sublimelsp/LSP-stylelint",
-			"name": "LSP-stylelint",
-			"labels": [
-				"linting"
-			],
-			"releases": [
-				{
-					"sublime_text": ">=3092",
-					"tags": true
-				}
-			]
-		},
-		{
 			"details": "https://github.com/sublimelsp/LSP-SourceKit",
 			"name": "LSP-SourceKit",
 			"releases": [
@@ -647,6 +650,19 @@
 						"linux",
 						"osx"
 					],
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-stylelint",
+			"name": "LSP-stylelint",
+			"labels": [
+				"linting"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=3092",
 					"tags": true
 				}
 			]
