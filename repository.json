@@ -135,6 +135,21 @@
 			]
 		},
 		{
+			"details": "https://github.com/TheSecEng/LSP-copilot",
+			"name": "LSP-copilot",
+			"labels": [
+				"auto-complete",
+				"code-intelligence",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4126",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-css",
 			"name": "LSP-css",
 			"labels": [
