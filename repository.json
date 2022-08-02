@@ -137,6 +137,10 @@
 		{
 			"details": "https://github.com/TheSecEng/LSP-copilot",
 			"name": "LSP-copilot",
+			"author": [
+				"TheSecEng",
+				"jfcherng"
+			],
 			"labels": [
 				"auto-complete",
 				"code-intelligence",
