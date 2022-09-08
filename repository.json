@@ -449,6 +449,7 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-aleo-developer",
 			"name": "LSP-aleo-developer",
+			"previous_names": ["LSP-leo"],
 			"author": "aleohq",
 			"homepage": "https://developer.aleo.org/overview/",
 			"issues": "https://github.com/AleoHQ/leo-plugins/issues",
