@@ -18,6 +18,17 @@
 	"packages": [
 		{
 			"details": "https://github.com/sublimelsp/LSP",
+			"name": "LSP",
+			"releases": [
+				{
+					"sublime_text": "3154 - 4069",
+					"tags": "3154-"
+				},
+				{
+					"sublime_text": ">=4070",
+					"tags": "4070-"
+				}
+			],
 			"labels": [
 				"auto-complete",
 				"linting",
@@ -54,27 +65,6 @@
 				"objectivec",
 				"method completion",
 				"intellicode"
-			],
-			"name": "LSP",
-			"releases": [
-				{
-					"sublime_text": "3154 - 4069",
-					"tags": "3154-"
-				},
-				{
-					"sublime_text": ">=4070",
-					"tags": "4070-"
-				}
-			]
-		},
-		{
-			"details": "https://github.com/sublimelsp/LSP-PowerShellEditorServices",
-			"name": "LSP-PowerShellEditorServices",
-			"releases": [
-				{
-					"sublime_text": ">=4070",
-					"tags": true
-				}
 			]
 		},
 		{
@@ -90,6 +80,22 @@
 			"releases": [
 				{
 					"sublime_text": ">=3154",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-astro",
+			"name": "LSP-astro",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]
@@ -129,6 +135,42 @@
 			]
 		},
 		{
+			"details": "https://github.com/TheSecEng/LSP-copilot",
+			"name": "LSP-copilot",
+			"author": [
+				"TheSecEng",
+				"jfcherng"
+			],
+			"labels": [
+				"auto-complete",
+				"code-intelligence",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4126",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-css",
+			"name": "LSP-css",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=3092",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-Dart",
 			"name": "LSP-Dart",
 			"labels": [
@@ -158,23 +200,6 @@
 			"releases": [
 				{
 					"sublime_text": ">=4070",
-					"tags": true
-				}
-			]
-		},
-		{
-			"details": "https://github.com/sublimelsp/LSP-css",
-			"name": "LSP-css",
-			"labels": [
-				"auto-complete",
-				"linting",
-				"formatting",
-				"code navigation",
-				"intellisense"
-			],
-			"releases": [
-				{
-					"sublime_text": ">=3092",
 					"tags": true
 				}
 			]
@@ -422,10 +447,11 @@
 			]
 		},
 		{
-			"details": "https://github.com/sublimelsp/LSP-leo",
-			"name": "LSP-leo",
+			"details": "https://github.com/sublimelsp/LSP-aleo-developer",
+			"name": "LSP-aleo-developer",
+			"previous_names": ["LSP-leo"],
 			"author": "aleohq",
-			"homepage": "http://leo-lang.org/",
+			"homepage": "https://developer.aleo.org/overview/",
 			"issues": "https://github.com/AleoHQ/leo-plugins/issues",
 			"labels": [
 				"aleo",
@@ -507,6 +533,16 @@
 				"code navigation",
 				"intellisense"
 			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-PowerShellEditorServices",
+			"name": "LSP-PowerShellEditorServices",
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -620,19 +656,6 @@
 			]
 		},
 		{
-			"details": "https://github.com/sublimelsp/LSP-stylelint",
-			"name": "LSP-stylelint",
-			"labels": [
-				"linting"
-			],
-			"releases": [
-				{
-					"sublime_text": ">=3092",
-					"tags": true
-				}
-			]
-		},
-		{
 			"details": "https://github.com/sublimelsp/LSP-SourceKit",
 			"name": "LSP-SourceKit",
 			"releases": [
@@ -642,6 +665,19 @@
 						"linux",
 						"osx"
 					],
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-stylelint",
+			"name": "LSP-stylelint",
+			"labels": [
+				"linting"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=3092",
 					"tags": true
 				}
 			]
@@ -697,7 +733,9 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-terraform",
 			"name": "LSP-terraform",
-			"previous_names": ["LSP-Terraform"],
+			"previous_names": [
+				"LSP-Terraform"
+			],
 			"labels": [
 				"auto-complete",
 				"linting",
