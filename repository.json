@@ -135,6 +135,23 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-clangd",
+			"name": "LSP-clangd",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/TheSecEng/LSP-copilot",
 			"name": "LSP-copilot",
 			"author": [
