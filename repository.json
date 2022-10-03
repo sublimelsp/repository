@@ -28,10 +28,6 @@
 			],
 			"releases": [
 				{
-					"sublime_text": "3092 - 3999",
-					"tags": "st3-"
-				},
-				{
 					"sublime_text": ">=4000",
 					"tags": true
 				}
