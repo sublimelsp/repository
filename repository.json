@@ -658,9 +658,7 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-ruff",
 			"name": "LSP-ruff",
-			"author": [
-				"LDAP"
-			],
+			"author": "LDAP",
 			"releases": [
 				{
 					"sublime_text": ">=3154",
