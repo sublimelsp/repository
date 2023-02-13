@@ -17,7 +17,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v1
         with:
-          python-version: 3.6
+          python-version: 3.7
 
       - name: Install Python dependencies
         run: python3 -m pip install pyyaml git+https://github.com/packagecontrol/st_package_reviewer.git@d2b43530442f227751c925d259df8fb324eee18f
