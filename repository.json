@@ -507,8 +507,9 @@
 			]
 		},
 		{
-			"details": "https://github.com/LDAP/LSP-ltex-ls",
+			"details": "https://github.com/sublimelsp/LSP-ltex-ls",
 			"name": "LSP-ltex-ls",
+			"author": "LDAP",
 			"releases": [
 				{
 					"sublime_text": ">=4070",
