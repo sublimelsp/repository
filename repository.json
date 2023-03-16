@@ -641,11 +641,11 @@
 			],
 			"releases": [
 				{
-					"sublime_text": "3154 - 3999",
+					"sublime_text": "3154 - 4147",
 					"tags": "st3-"
 				},
 				{
-					"sublime_text": ">=4000",
+					"sublime_text": ">=4148",
 					"tags": true
 				}
 			]
