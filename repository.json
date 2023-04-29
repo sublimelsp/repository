@@ -839,6 +839,22 @@
 			]
 		},
 		{
+			"details": "https://github.com/errata-ai/LSP-vale-ls",
+			"name": "LSP-vale-ls",
+			"author": "jdkato",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-volar",
 			"name": "LSP-volar",
 			"labels": [
