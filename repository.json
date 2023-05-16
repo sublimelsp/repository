@@ -522,8 +522,9 @@
 			]
 		},
 		{
-			"details": "https://github.com/LDAP/LSP-ltex-ls",
+			"details": "https://github.com/sublimelsp/LSP-ltex-ls",
 			"name": "LSP-ltex-ls",
+			"author": "LDAP",
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -655,7 +656,11 @@
 			],
 			"releases": [
 				{
-					"sublime_text": ">=3154",
+					"sublime_text": "3154 - 4147",
+					"tags": "st3-"
+				},
+				{
+					"sublime_text": ">=4148",
 					"tags": true
 				}
 			]
@@ -666,6 +671,17 @@
 			"releases": [
 				{
 					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-ruff",
+			"name": "LSP-ruff",
+			"author": "LDAP",
+			"releases": [
+				{
+					"sublime_text": ">=3154",
 					"tags": true
 				}
 			]
@@ -833,6 +849,22 @@
 				},
 				{
 					"sublime_text": ">=4000",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/errata-ai/LSP-vale-ls",
+			"name": "LSP-vale-ls",
+			"author": "jdkato",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]
