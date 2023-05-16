@@ -188,6 +188,21 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-cspell",
+			"name": "LSP-cspell",
+			"labels": [
+				"linting",
+				"cspell",
+				"spell"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4126",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-css",
 			"name": "LSP-css",
 			"labels": [
