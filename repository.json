@@ -855,6 +855,21 @@
 			]
 		},
 		{
+			"details": "https://github.com/martinbarez/LSP-VHDL-ls",
+			"name": "LSP-VHDL-ls",
+			"labels": ["VHDL"],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"platforms": [
+						"windows",
+						"linux"
+					],
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-volar",
 			"name": "LSP-volar",
 			"labels": [
