@@ -475,6 +475,25 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-kotlin",
+			"name": "LSP-kotlin",
+			"labels": [
+				"java",
+				"kotlin",
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"name": "LSP-lemminx",
 			"details": "https://github.com/sublimelsp/LSP-lemminx",
 			"labels": [
