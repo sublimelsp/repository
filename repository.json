@@ -342,6 +342,22 @@
 			]
 		},
 		{
+			"details": "https://github.com/jdkato/LSP-gnols",
+			"name": "LSP-gnols",
+			"author": "jdkato",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-gopls",
 			"name": "LSP-gopls",
 			"labels": [
