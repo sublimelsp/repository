@@ -17,7 +17,8 @@
 	],
 	"packages": [
 		{
-			"details": "https://github.com/sublimelsp/LSP",
+			"details": "https://github.com/cameroncooper/sublime-chialisp",
+			"name": "Chialisp",
 			"labels": [
 				"auto-complete",
 				"linting",
@@ -25,6 +26,15 @@
 				"code navigation",
 				"intellisense"
 			],
+			"releases": [
+				{
+					"sublime_text": ">=4000",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP",
 			"name": "LSP",
 			"releases": [
 				{
@@ -35,6 +45,43 @@
 					"sublime_text": ">=4070",
 					"tags": "4070-"
 				}
+			],
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense",
+				"javascript",
+				"typescript",
+				"php",
+				"python",
+				"snippets",
+				"ruby",
+				"r",
+				"java",
+				"go",
+				"golang",
+				"bash",
+				"kotlin",
+				"html",
+				"css",
+				"ocaml",
+				"rust",
+				"julia",
+				"lua",
+				"haskell",
+				"c",
+				"cpp",
+				"c++",
+				"csharp",
+				"c#",
+				"react",
+				"swift",
+				"objective-c",
+				"objectivec",
+				"method completion",
+				"intellicode"
 			]
 		},
 		{
@@ -53,6 +100,13 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-angular",
 			"name": "LSP-angular",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=3154",
@@ -61,11 +115,102 @@
 			]
 		},
 		{
-			"details": "https://github.com/sublimelsp/LSP-bash",
-			"name": "LSP-bash",
+			"details": "https://github.com/sublimelsp/LSP-astro",
+			"name": "LSP-astro",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"code navigation",
+				"intellisense"
+			],
 			"releases": [
 				{
-					"sublime_text": ">=3092",
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-bash",
+			"name": "LSP-bash",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=3154",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-Bicep",
+			"name": "LSP-Bicep",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-clangd",
+			"name": "LSP-clangd",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/TheSecEng/LSP-copilot",
+			"name": "LSP-copilot",
+			"author": [
+				"TheSecEng",
+				"jfcherng"
+			],
+			"labels": [
+				"auto-complete",
+				"code-intelligence",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4126",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-cspell",
+			"name": "LSP-cspell",
+			"labels": [
+				"linting",
+				"cspell",
+				"spell"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4126",
 					"tags": true
 				}
 			]
@@ -73,9 +218,50 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-css",
 			"name": "LSP-css",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
 			"releases": [
 				{
-					"sublime_text": ">=3092",
+					"sublime_text": ">=3154",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-Dart",
+			"name": "LSP-Dart",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-Deno",
+			"name": "LSP-Deno",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]
@@ -83,9 +269,16 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-dockerfile",
 			"name": "LSP-dockerfile",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
 			"releases": [
 				{
-					"sublime_text": ">=3092",
+					"sublime_text": ">=3154",
 					"tags": true
 				}
 			]
@@ -93,9 +286,16 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-elixir",
 			"name": "LSP-elixir",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
 			"releases": [
 				{
-					"sublime_text": ">=3092",
+					"sublime_text": ">=3154",
 					"tags": true
 				}
 			]
@@ -103,9 +303,16 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-elm",
 			"name": "LSP-elm",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
 			"releases": [
 				{
-					"sublime_text": ">=3092",
+					"sublime_text": ">=3154",
 					"tags": true
 				}
 			]
@@ -113,9 +320,12 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-eslint",
 			"name": "LSP-eslint",
+			"labels": [
+				"linting"
+			],
 			"releases": [
 				{
-					"sublime_text": "3092 - 3999",
+					"sublime_text": "3154 - 3999",
 					"tags": "st3-"
 				},
 				{
@@ -125,58 +335,81 @@
 			]
 		},
 		{
-			"details": "https://github.com/sublimelsp/LSP-html",
-			"name": "LSP-html",
+			"details": "https://github.com/sublimelsp/LSP-file-watcher-chokidar",
+			"name": "LSP-file-watcher-chokidar",
 			"releases": [
 				{
-					"sublime_text": ">=3092",
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]
 		},
 		{
-			"details": "https://github.com/sublimelsp/LSP-intelephense",
-			"name": "LSP-intelephense",
+			"details": "https://github.com/sublimelsp/LSP-flow",
+			"name": "LSP-flow",
 			"releases": [
 				{
-					"sublime_text": ">=3092",
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]
 		},
 		{
-			"details": "https://github.com/sublimelsp/LSP-json",
-			"name": "LSP-json",
+			"details": "https://github.com/jdkato/LSP-gnols",
+			"name": "LSP-gnols",
+			"author": "jdkato",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"intellisense"
+			],
 			"releases": [
 				{
-					"sublime_text": ">=3092",
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]
 		},
 		{
-			"details": "https://github.com/scalameta/metals-sublime",
-			"name": "LSP-metals",
+			"details": "https://github.com/sublimelsp/LSP-gopls",
+			"name": "LSP-gopls",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
 			"releases": [
 				{
-					"sublime_text": ">=3092",
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]
 		},
 		{
-			"details": "https://github.com/prometheus-community/sublimelsp-promql",
-			"name": "LSP-promql",
+			"details": "https://github.com/sublimelsp/LSP-Grammarly",
+			"name": "LSP-Grammarly",
+			"labels": [
+				"linting"
+			],
 			"releases": [
 				{
-					"sublime_text": ">=3092",
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]
 		},
 		{
-			"details": "https://github.com/sublimelsp/LSP-pyright",
-			"name": "LSP-pyright",
+			"details": "https://github.com/sublimelsp/LSP-graphql",
+			"name": "LSP-graphql",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=3154",
@@ -185,11 +418,376 @@
 			]
 		},
 		{
-			"details": "https://github.com/Cloudstek/LSP-serenata",
-			"name": "LSP-serenata",
+			"details": "https://github.com/sublimelsp/LSP-html",
+			"name": "LSP-html",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
 			"releases": [
 				{
-					"sublime_text": ">=3092",
+					"sublime_text": ">=3154",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-intelephense",
+			"name": "LSP-intelephense",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=3154",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-jdtls",
+			"name": "LSP-jdtls",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-json",
+			"name": "LSP-json",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=3154",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-julia",
+			"name": "LSP-julia",
+			"labels": [
+				"julia",
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4095",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-kotlin",
+			"name": "LSP-kotlin",
+			"labels": [
+				"java",
+				"kotlin",
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
+			"name": "LSP-lemminx",
+			"details": "https://github.com/sublimelsp/LSP-lemminx",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": "3154 - 4069",
+					"tags": "st3-"
+				},
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-leo",
+			"name": "LSP-leo",
+			"previous_names": ["LSP-aleo-developer"],
+			"author": "aleohq",
+			"homepage": "https://developer.aleo.org/overview/",
+			"issues": "https://github.com/AleoHQ/leo-plugins/issues",
+			"labels": [
+				"aleo",
+				"leo",
+				"auto-complete",
+				"linting",
+				"code navigation",
+				"intellisense",
+				"color scheme",
+				"language syntax",
+				"snippets",
+				"theme"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-ltex-ls",
+			"name": "LSP-ltex-ls",
+			"author": "LDAP",
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-lua",
+			"name": "LSP-lua",
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-marksman",
+			"name": "LSP-marksman",
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/scalameta/metals-sublime",
+			"name": "LSP-metals",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": "3154 - 3999",
+					"tags": "st3-"
+				},
+				{
+					"sublime_text": ">=4000",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-OmniSharp",
+			"name": "LSP-OmniSharp",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-PowerShellEditorServices",
+			"name": "LSP-PowerShellEditorServices",
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/Sublime-Instincts/LSP-prisma",
+			"name": "LSP-prisma",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4126",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/prometheus-community/sublimelsp-promql",
+			"name": "LSP-promql",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=3154",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-pylsp",
+			"name": "LSP-pylsp",
+			"releases": [
+				{
+					"sublime_text": ">=3154",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-pyright",
+			"name": "LSP-pyright",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": "3154 - 4147",
+					"tags": "st3-"
+				},
+				{
+					"sublime_text": ">=4148",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-R",
+			"name": "LSP-R",
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-rome",
+			"name": "LSP-rome",
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-ruff",
+			"name": "LSP-ruff",
+			"author": "LDAP",
+			"releases": [
+				{
+					"sublime_text": ">=3154",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-rust-analyzer",
+			"name": "LSP-rust-analyzer",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-serenata",
+			"name": "LSP-serenata",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": "3154 - 3999",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-SourceKit",
+			"name": "LSP-SourceKit",
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"platforms": [
+						"linux",
+						"osx"
+					],
 					"tags": true
 				}
 			]
@@ -197,9 +795,12 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-stylelint",
 			"name": "LSP-stylelint",
+			"labels": [
+				"linting"
+			],
 			"releases": [
 				{
-					"sublime_text": ">=3092",
+					"sublime_text": ">=3154",
 					"tags": true
 				}
 			]
@@ -207,6 +808,13 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-svelte",
 			"name": "LSP-svelte",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=3154",
@@ -217,9 +825,50 @@
 		{
 			"details": "https://github.com/HuygensING/LSP-tagml",
 			"name": "LSP-tagml",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
 			"releases": [
 				{
-					"sublime_text": ">=3092",
+					"sublime_text": ">=3154",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-tailwindcss",
+			"name": "LSP-tailwindcss",
+			"labels": [
+				"auto-complete",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=3154",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-terraform",
+			"name": "LSP-terraform",
+			"previous_names": [
+				"LSP-Terraform"
+			],
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]
@@ -227,13 +876,15 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-TexLab",
 			"name": "LSP-TexLab",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
 			"releases": [
 				{
-					"platforms": [
-						"windows-x64",
-						"osx-x64",
-						"linux-x64"
-					],
 					"sublime_text": ">=4070",
 					"tags": true
 				}
@@ -242,9 +893,68 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-typescript",
 			"name": "LSP-typescript",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
 			"releases": [
 				{
-					"sublime_text": ">=3092",
+					"sublime_text": "3154 - 3999",
+					"tags": "st3-"
+				},
+				{
+					"sublime_text": ">=4000",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/errata-ai/LSP-vale-ls",
+			"name": "LSP-vale-ls",
+			"author": "jdkato",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/martinbarez/LSP-VHDL-ls",
+			"name": "LSP-VHDL-ls",
+			"labels": ["VHDL"],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"platforms": [
+						"windows",
+						"linux"
+					],
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-volar",
+			"name": "LSP-volar",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=3154",
 					"tags": true
 				}
 			]
@@ -252,9 +962,16 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-vue",
 			"name": "LSP-vue",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
 			"releases": [
 				{
-					"sublime_text": ">=3092",
+					"sublime_text": ">=3154",
 					"tags": true
 				}
 			]
@@ -262,9 +979,16 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-yaml",
 			"name": "LSP-yaml",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
 			"releases": [
 				{
-					"sublime_text": ">=3092",
+					"sublime_text": ">=3154",
 					"tags": true
 				}
 			]
