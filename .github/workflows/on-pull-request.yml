@@ -20,7 +20,7 @@ jobs:
           python-version: 3.7
 
       - name: Install Python dependencies
-        run: python3 -m pip install
+        run: python3 -m pip install pyyaml
 
       - uses: packagecontrol/st-schema-reviewer-action@v1
 
