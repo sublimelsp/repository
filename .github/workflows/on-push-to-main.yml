@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: sublimelsp/st-schema-reviewer-action@v1
+      - uses: packagecontrol/st-schema-reviewer-action@v1
