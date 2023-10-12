@@ -20,11 +20,11 @@ jobs:
           python-version: 3.7
 
       - name: Install Python dependencies
-        run: python3 -m pip install pyyaml git+https://github.com/packagecontrol/st_package_reviewer.git@d2b43530442f227751c925d259df8fb324eee18f
+        run: python3 -m pip install pyyaml
 
-      - uses: sublimelsp/st-schema-reviewer-action@v1
+      - uses: packagecontrol/st-schema-reviewer-action@v1
 
-      - uses: sublimelsp/st-package-reviewer-action@v1
+      - uses: packagecontrol/st-package-reviewer-action@v1
         with:
           pr-url: ${{ github.event.pull_request.url }}
           base-sha: ${{ github.event.pull_request.base.sha }}
