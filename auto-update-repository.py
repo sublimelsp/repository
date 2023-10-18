@@ -16,7 +16,6 @@ TODO: The sublime_text version range should be extracted from JSON.
 from typing import Dict, Any
 import functools
 import json
-import os
 import pathlib
 import sys
 
