@@ -490,7 +490,11 @@
 			],
 			"releases": [
 				{
-					"sublime_text": ">=3154",
+					"sublime_text": "3154 - 4147",
+					"tags": "st3-"
+				},
+				{
+					"sublime_text": ">=4148",
 					"tags": true
 				}
 			]
