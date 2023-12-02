@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v4
       - id: make-pr
         run: python3 auto-update-repository.py <<<'${{ toJson(github.event.client_payload) }}'
-      - uses: peter-evans/create-pull-request@v3
+      - uses: peter-evans/create-pull-request@v5
         with:
           commit-message: '${{ steps.make-pr.outputs.commit_message }}'
           committer: GitHub <noreply@github.com>
