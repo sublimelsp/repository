@@ -9,7 +9,7 @@
 			"releases": [
 				{
 					"base": "https://github.com/sublimelsp/lsp_utils",
-					"sublime_text": "3000 - 4069",
+					"sublime_text": "3154 - 4069",
 					"tags": "st3-v"
 				},
 				{
@@ -229,11 +229,11 @@
 			],
 			"releases": [
 				{
-					"sublime_text": "3154 - 4147",
+					"sublime_text": "3154 - 4069",
 					"tags": "st3-"
 				},
 				{
-					"sublime_text": ">=4148",
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]
@@ -331,11 +331,11 @@
 			],
 			"releases": [
 				{
-					"sublime_text": "3154 - 3999",
+					"sublime_text": "3154 - 4069",
 					"tags": "st3-"
 				},
 				{
-					"sublime_text": ">=4000",
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]
@@ -435,11 +435,11 @@
 			],
 			"releases": [
 				{
-					"sublime_text": "3154 - 4147",
+					"sublime_text": "3154 - 4069",
 					"tags": "st3-"
 				},
 				{
-					"sublime_text": ">=4148",
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]
@@ -490,11 +490,11 @@
 			],
 			"releases": [
 				{
-					"sublime_text": "3154 - 4147",
+					"sublime_text": "3154 - 4069",
 					"tags": "st3-"
 				},
 				{
-					"sublime_text": ">=4148",
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]
@@ -512,7 +512,7 @@
 			],
 			"releases": [
 				{
-					"sublime_text": ">=4095",
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]
@@ -626,11 +626,11 @@
 			],
 			"releases": [
 				{
-					"sublime_text": "3154 - 3999",
+					"sublime_text": "3154 - 4069",
 					"tags": "st3-"
 				},
 				{
-					"sublime_text": ">=4000",
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]
@@ -674,7 +674,7 @@
 			],
 			"releases": [
 				{
-					"sublime_text": ">=4126",
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]
@@ -718,11 +718,11 @@
 			],
 			"releases": [
 				{
-					"sublime_text": "3154 - 4147",
+					"sublime_text": "3154 - 4069",
 					"tags": "st3-"
 				},
 				{
-					"sublime_text": ">=4148",
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]
@@ -787,7 +787,7 @@
 			],
 			"releases": [
 				{
-					"sublime_text": "3154 - 3999",
+					"sublime_text": "3154 - 4069",
 					"tags": true
 				}
 			]
@@ -916,11 +916,11 @@
 			],
 			"releases": [
 				{
-					"sublime_text": "3154 - 3999",
+					"sublime_text": "3154 - 4069",
 					"tags": "st3-"
 				},
 				{
-					"sublime_text": ">=4000",
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]
@@ -968,11 +968,11 @@
 			],
 			"releases": [
 				{
-					"sublime_text": "3154 - 4147",
+					"sublime_text": "3154 - 4069",
 					"tags": "st3-"
 				},
 				{
-					"sublime_text": ">=4148",
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]
@@ -1006,11 +1006,11 @@
 			],
 			"releases": [
 				{
-					"sublime_text": "3154 - 4147",
+					"sublime_text": "3154 - 4069",
 					"tags": "st3-"
 				},
 				{
-					"sublime_text": ">=4148",
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]
