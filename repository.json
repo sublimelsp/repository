@@ -972,7 +972,7 @@
 					"tags": "st3-"
 				},
 				{
-					"sublime_text": ">=4070",
+					"sublime_text": ">=4148",
 					"tags": true
 				}
 			]
