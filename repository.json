@@ -197,7 +197,7 @@
 			],
 			"releases": [
 				{
-					"sublime_text": ">=4070",
+					"sublime_text": ">=4126",
 					"tags": true
 				}
 			]
@@ -512,7 +512,7 @@
 			],
 			"releases": [
 				{
-					"sublime_text": ">=4070",
+					"sublime_text": ">=4095",
 					"tags": true
 				}
 			]
