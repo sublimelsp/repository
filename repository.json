@@ -794,6 +794,18 @@
 			]
 		},
 		{
+			"details":"https://github.com/PythonVoiceCodingPlugin/LSP-pyvoice",
+			"name": "LSP-pyvoice",
+			"author": "mpourmpoulis",
+			"labels":["voice coding","accessibility"],
+			"releases":[
+				{
+					"sublime_text":">=4070",
+					"tags":true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-R",
 			"name": "LSP-R",
 			"releases": [
