@@ -798,6 +798,7 @@
 			"name": "LSP-pyvoice",
 			"author": "mpourmpoulis",
 			"labels":["voice coding","accessibility"],
+			"platforms":["windows","linux","osx"],
 			"releases":[
 				{
 					"sublime_text":">=4070",
