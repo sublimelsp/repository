@@ -605,7 +605,9 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-leo",
 			"name": "LSP-leo",
-			"previous_names": ["LSP-aleo-developer"],
+			"previous_names": [
+				"LSP-aleo-developer"
+			],
 			"author": "aleohq",
 			"homepage": "https://developer.aleo.org/overview/",
 			"issues": "https://github.com/AleoHQ/leo-plugins/issues",
@@ -789,6 +791,21 @@
 				},
 				{
 					"sublime_text": ">=4148",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/PythonVoiceCodingPlugin/LSP-pyvoice",
+			"name": "LSP-pyvoice",
+			"author": "mpourmpoulis",
+			"labels": [
+				"voice coding",
+				"accessibility"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]
@@ -1026,7 +1043,9 @@
 		{
 			"details": "https://github.com/martinbarez/LSP-VHDL-ls",
 			"name": "LSP-VHDL-ls",
-			"labels": ["VHDL"],
+			"labels": [
+				"VHDL"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
