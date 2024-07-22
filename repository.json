@@ -803,11 +803,6 @@
 				"voice coding",
 				"accessibility"
 			],
-			"platforms": [
-				"windows",
-				"linux",
-				"osx"
-			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
