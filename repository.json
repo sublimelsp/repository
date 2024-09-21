@@ -1041,6 +1041,27 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-vetur",
+			"name": "LSP-vetur",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": "3154 - 3999",
+					"tags": "st3-"
+				},
+				{
+					"sublime_text": ">=4000",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/martinbarez/LSP-VHDL-ls",
 			"name": "LSP-VHDL-ls",
 			"labels": [
