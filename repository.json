@@ -1142,8 +1142,8 @@
 			]
 		},
 		{
-			"details": "https://github.com/niksy/LSP-sass",
-			"name": "LSP-sass",
+			"details": "https://github.com/sublimelsp/LSP-some-sass",
+			"name": "LSP-some-sass",
 			"labels": [
 				"auto-complete",
 				"linting",
