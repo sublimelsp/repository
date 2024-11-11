@@ -1157,6 +1157,23 @@
 					"tags": true
 				}
 			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-twiggy",
+			"name": "LSP-twiggy",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4169",
+					"tags": true
+				}
+			]
 		}
 	],
 	"schema_version": "3.0.0"
