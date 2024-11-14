@@ -880,6 +880,23 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-some-sass",
+			"name": "LSP-some-sass",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4169",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-SourceKit",
 			"name": "LSP-SourceKit",
 			"releases": [
@@ -1025,6 +1042,23 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-twiggy",
+			"name": "LSP-twiggy",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4169",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/errata-ai/LSP-vale-ls",
 			"name": "LSP-vale-ls",
 			"author": "jdkato",
@@ -1137,40 +1171,6 @@
 				},
 				{
 					"sublime_text": ">=4148",
-					"tags": true
-				}
-			]
-		},
-		{
-			"details": "https://github.com/sublimelsp/LSP-some-sass",
-			"name": "LSP-some-sass",
-			"labels": [
-				"auto-complete",
-				"linting",
-				"formatting",
-				"code navigation",
-				"intellisense"
-			],
-			"releases": [
-				{
-					"sublime_text": ">=4169",
-					"tags": true
-				}
-			]
-		},
-		{
-			"details": "https://github.com/sublimelsp/LSP-twiggy",
-			"name": "LSP-twiggy",
-			"labels": [
-				"auto-complete",
-				"linting",
-				"formatting",
-				"code navigation",
-				"intellisense"
-			],
-			"releases": [
-				{
-					"sublime_text": ">=4169",
 					"tags": true
 				}
 			]
