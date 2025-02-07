@@ -9,12 +9,12 @@
 			"releases": [
 				{
 					"base": "https://github.com/sublimelsp/lsp_utils",
-					"sublime_text": "3000 - 4069",
+					"sublime_text": "3000 - 3999",
 					"tags": "st3-v"
 				},
 				{
 					"base": "https://github.com/sublimelsp/lsp_utils",
-					"sublime_text": ">=4070",
+					"sublime_text": ">=4132",
 					"tags": true
 				}
 			]
@@ -43,11 +43,11 @@
 			"name": "LSP",
 			"releases": [
 				{
-					"sublime_text": "3154 - 4069",
+					"sublime_text": "3154 - 3999",
 					"tags": "3154-"
 				},
 				{
-					"sublime_text": ">=4070",
+					"sublime_text": ">=4132",
 					"tags": "4070-"
 				}
 			],
