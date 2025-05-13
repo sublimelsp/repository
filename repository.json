@@ -1174,6 +1174,17 @@
 					"tags": true
 				}
 			]
+		},
+		{
+			"details": "https://github.com/CREAsTIVE/LSP-rustowl",
+			"name": "LSP-rustowl",
+			"labels": [],
+			"releases": [
+				{
+					"sublime_text": "*",
+					"tags": true
+				}
+			]
 		}
 	],
 	"schema_version": "3.0.0"
