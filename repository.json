@@ -863,6 +863,17 @@
 			]
 		},
 		{
+			"details": "https://github.com/CREAsTIVE/LSP-rustowl",
+			"name": "LSP-rustowl",
+			"labels": [],
+			"releases": [
+				{
+					"sublime_text": "*",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-serenata",
 			"name": "LSP-serenata",
 			"labels": [
