@@ -277,7 +277,7 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-flow",
 			"name": "LSP-flow",
-			"labels": ["lsp", "javascript"],
+			"labels": ["lsp"],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
