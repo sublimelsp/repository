@@ -46,6 +46,7 @@
 				}
 			],
 			"labels": [
+				"lsp",
 				"auto-complete",
 				"linting",
 				"formatting",
