@@ -24,7 +24,9 @@
 		{
 			"details": "https://github.com/cameroncooper/sublime-chialisp",
 			"name": "Chialisp",
-			"labels": ["lsp"],
+			"labels": [
+				"lsp"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4000",
@@ -56,7 +58,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-angular",
 			"name": "LSP-angular",
-			"labels": ["lsp", "angular"],
+			"labels": [
+				"lsp",
+				"angular"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 3999",
@@ -71,7 +76,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-astro",
 			"name": "LSP-astro",
-			"labels": ["lsp", "astro"],
+			"labels": [
+				"lsp",
+				"astro"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -82,7 +90,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-basedpyright",
 			"name": "LSP-basedpyright",
-			"labels": ["lsp", "python"],
+			"labels": [
+				"lsp",
+				"python"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4148",
@@ -93,7 +104,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-bash",
 			"name": "LSP-bash",
-			"labels": ["lsp", "bash"],
+			"labels": [
+				"lsp",
+				"bash"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 3999",
@@ -108,7 +122,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-Bicep",
 			"name": "LSP-Bicep",
-			"labels": ["lsp", "bicep"],
+			"labels": [
+				"lsp",
+				"bicep"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -119,7 +136,15 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-biome",
 			"name": "LSP-biome",
-			"labels": ["lsp", "javascript", "typescript", "json", "html", "css", "graphql"],
+			"labels": [
+				"lsp",
+				"javascript",
+				"typescript",
+				"json",
+				"html",
+				"css",
+				"graphql"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -130,7 +155,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-clangd",
 			"name": "LSP-clangd",
-			"labels": ["lsp", "c++"],
+			"labels": [
+				"lsp",
+				"c++"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -145,7 +173,10 @@
 				"TheSecEng",
 				"jfcherng"
 			],
-			"labels": ["lsp", "ai"],
+			"labels": [
+				"lsp",
+				"ai"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4126",
@@ -170,7 +201,12 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-css",
 			"name": "LSP-css",
-			"labels": ["lsp", "css", "scss", "less"],
+			"labels": [
+				"lsp",
+				"css",
+				"scss",
+				"less"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 4147",
@@ -185,7 +221,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-Dart",
 			"name": "LSP-Dart",
-			"labels": ["lsp", "dart"],
+			"labels": [
+				"lsp",
+				"dart"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -196,7 +235,11 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-Deno",
 			"name": "LSP-Deno",
-			"labels": ["lsp", "javascript", "typescript"],
+			"labels": [
+				"lsp",
+				"javascript",
+				"typescript"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -207,7 +250,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-dockerfile",
 			"name": "LSP-dockerfile",
-			"labels": ["lsp", "docker"],
+			"labels": [
+				"lsp",
+				"docker"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 3999",
@@ -222,7 +268,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-elixir",
 			"name": "LSP-elixir",
-			"labels": ["lsp", "elixir"],
+			"labels": [
+				"lsp",
+				"elixir"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 3999",
@@ -237,7 +286,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-elm",
 			"name": "LSP-elm",
-			"labels": ["lsp", "elm"],
+			"labels": [
+				"lsp",
+				"elm"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 3999",
@@ -252,7 +304,11 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-eslint",
 			"name": "LSP-eslint",
-			"labels": ["lsp", "javascript", "typescript"],
+			"labels": [
+				"lsp",
+				"javascript",
+				"typescript"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 3999",
@@ -267,7 +323,9 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-file-watcher-chokidar",
 			"name": "LSP-file-watcher-chokidar",
-			"labels": ["lsp"],
+			"labels": [
+				"lsp"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -278,7 +336,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-flow",
 			"name": "LSP-flow",
-			"labels": ["lsp", "flow"],
+			"labels": [
+				"lsp",
+				"flow"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -290,7 +351,10 @@
 			"details": "https://github.com/jdkato/LSP-gnols",
 			"name": "LSP-gnols",
 			"author": "jdkato",
-			"labels": ["lsp", "gno"],
+			"labels": [
+				"lsp",
+				"gno"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -301,7 +365,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-gopls",
 			"name": "LSP-gopls",
-			"labels": ["lsp", "go"],
+			"labels": [
+				"lsp",
+				"go"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -326,7 +393,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-graphql",
 			"name": "LSP-graphql",
-			"labels": ["lsp", "graphql"],
+			"labels": [
+				"lsp",
+				"graphql"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 3999",
@@ -341,7 +411,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-html",
 			"name": "LSP-html",
-			"labels": ["lsp", "html"],
+			"labels": [
+				"lsp",
+				"html"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 4147",
@@ -356,7 +429,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-intelephense",
 			"name": "LSP-intelephense",
-			"labels": ["lsp", "php"],
+			"labels": [
+				"lsp",
+				"php"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 3999",
@@ -371,7 +447,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-jdtls",
 			"name": "LSP-jdtls",
-			"labels": ["lsp", "java"],
+			"labels": [
+				"lsp",
+				"java"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -382,7 +461,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-json",
 			"name": "LSP-json",
-			"labels": ["lsp", "json"],
+			"labels": [
+				"lsp",
+				"json"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 4147",
@@ -397,7 +479,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-julia",
 			"name": "LSP-julia",
-			"labels": ["lsp", "julia"],
+			"labels": [
+				"lsp",
+				"julia"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4095",
@@ -423,7 +508,10 @@
 		{
 			"name": "LSP-lemminx",
 			"details": "https://github.com/sublimelsp/LSP-lemminx",
-			"labels": ["lsp", "xml"],
+			"labels": [
+				"lsp",
+				"xml"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 4069",
@@ -464,7 +552,12 @@
 			"details": "https://github.com/sublimelsp/LSP-ltex-ls",
 			"name": "LSP-ltex-ls",
 			"author": "LDAP",
-			"labels": ["lsp", "spellcheck", "latex", "markdown"],
+			"labels": [
+				"lsp",
+				"spellcheck",
+				"latex",
+				"markdown"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -475,7 +568,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-lua",
 			"name": "LSP-lua",
-			"labels": ["lsp", "lua"],
+			"labels": [
+				"lsp",
+				"lua"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -486,7 +582,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-marksman",
 			"name": "LSP-marksman",
-			"labels": ["lsp", "markdown"],
+			"labels": [
+				"lsp",
+				"markdown"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -497,7 +596,10 @@
 		{
 			"details": "https://github.com/scalameta/metals-sublime",
 			"name": "LSP-metals",
-			"labels": ["lsp", "scala"],
+			"labels": [
+				"lsp",
+				"scala"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 3999",
@@ -512,7 +614,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-nimlangserver",
 			"name": "LSP-nimlangserver",
-			"labels": ["lsp", "nim"],
+			"labels": [
+				"lsp",
+				"nim"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -523,7 +628,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-OmniSharp",
 			"name": "LSP-OmniSharp",
-			"labels": ["lsp", "c#"],
+			"labels": [
+				"lsp",
+				"c#"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -534,7 +642,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-PowerShellEditorServices",
 			"name": "LSP-PowerShellEditorServices",
-			"labels": ["lsp", "powershell"],
+			"labels": [
+				"lsp",
+				"powershell"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -545,7 +656,10 @@
 		{
 			"details": "https://github.com/Sublime-Instincts/LSP-prisma",
 			"name": "LSP-prisma",
-			"labels": ["lsp", "prisma"],
+			"labels": [
+				"lsp",
+				"prisma"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4126",
@@ -556,7 +670,10 @@
 		{
 			"details": "https://github.com/prometheus-community/sublimelsp-promql",
 			"name": "LSP-promql",
-			"labels": ["lsp", "promql"],
+			"labels": [
+				"lsp",
+				"promql"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 4069",
@@ -567,7 +684,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-pylsp",
 			"name": "LSP-pylsp",
-			"labels": ["lsp", "python"],
+			"labels": [
+				"lsp",
+				"python"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 3999",
@@ -582,7 +702,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-pyright",
 			"name": "LSP-pyright",
-			"labels": ["lsp", "python"],
+			"labels": [
+				"lsp",
+				"python"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 4147",
@@ -613,7 +736,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-R",
 			"name": "LSP-R",
-			"labels": ["lsp", "r"],
+			"labels": [
+				"lsp",
+				"r"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -624,7 +750,11 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-rome",
 			"name": "LSP-rome",
-			"labels": ["lsp", "javascript", "typescript"],
+			"labels": [
+				"lsp",
+				"javascript",
+				"typescript"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -636,7 +766,10 @@
 			"details": "https://github.com/sublimelsp/LSP-ruff",
 			"name": "LSP-ruff",
 			"author": "LDAP",
-			"labels": ["lsp", "python"],
+			"labels": [
+				"lsp",
+				"python"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 3999",
@@ -651,7 +784,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-rust-analyzer",
 			"name": "LSP-rust-analyzer",
-			"labels": ["lsp", "rust"],
+			"labels": [
+				"lsp",
+				"rust"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -662,7 +798,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-serenata",
 			"name": "LSP-serenata",
-			"labels": ["lsp", "php"],
+			"labels": [
+				"lsp",
+				"php"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 3999",
@@ -673,7 +812,11 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-some-sass",
 			"name": "LSP-some-sass",
-			"labels": ["lsp", "scss", "sass"],
+			"labels": [
+				"lsp",
+				"scss",
+				"sass"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4169",
@@ -684,7 +827,14 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-SourceKit",
 			"name": "LSP-SourceKit",
-			"labels": ["lsp", "c", "c++", "objective-c", "objective-c++", "swift"],
+			"labels": [
+				"lsp",
+				"c",
+				"c++",
+				"objective-c",
+				"objective-c++",
+				"swift"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -699,7 +849,12 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-stylelint",
 			"name": "LSP-stylelint",
-			"labels": ["lsp", "css", "scss", "less"],
+			"labels": [
+				"lsp",
+				"css",
+				"scss",
+				"less"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 3999",
@@ -714,7 +869,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-svelte",
 			"name": "LSP-svelte",
-			"labels": ["lsp", "svelte"],
+			"labels": [
+				"lsp",
+				"svelte"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 3999",
@@ -729,7 +887,10 @@
 		{
 			"details": "https://github.com/HuygensING/LSP-tagml",
 			"name": "LSP-tagml",
-			"labels": ["lsp", "tagml"],
+			"labels": [
+				"lsp",
+				"tagml"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 4069",
@@ -740,7 +901,9 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-tailwindcss",
 			"name": "LSP-tailwindcss",
-			"labels": ["lsp"],
+			"labels": [
+				"lsp"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 3999",
@@ -755,7 +918,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-taplo",
 			"name": "LSP-taplo",
-			"labels": ["lsp", "toml"],
+			"labels": [
+				"lsp",
+				"toml"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -769,7 +935,10 @@
 			"previous_names": [
 				"LSP-Terraform"
 			],
-			"labels": ["lsp", "terraform"],
+			"labels": [
+				"lsp",
+				"terraform"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -780,7 +949,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-TexLab",
 			"name": "LSP-TexLab",
-			"labels": ["lsp", "latex"],
+			"labels": [
+				"lsp",
+				"latex"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -791,7 +963,11 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-typescript",
 			"name": "LSP-typescript",
-			"labels": ["lsp", "javascript", "typescript"],
+			"labels": [
+				"lsp",
+				"javascript",
+				"typescript"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 3999",
@@ -806,7 +982,11 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-twiggy",
 			"name": "LSP-twiggy",
-			"labels": ["lsp", "php", "twig"],
+			"labels": [
+				"lsp",
+				"php",
+				"twig"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4169",
@@ -818,7 +998,10 @@
 			"details": "https://github.com/errata-ai/LSP-vale-ls",
 			"name": "LSP-vale-ls",
 			"author": "jdkato",
-			"labels": ["lsp", "vale"],
+			"labels": [
+				"lsp",
+				"vale"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -829,7 +1012,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-vetur",
 			"name": "LSP-vetur",
-			"labels": ["lsp", "vue"],
+			"labels": [
+				"lsp",
+				"vue"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 3999",
@@ -844,7 +1030,10 @@
 		{
 			"details": "https://github.com/martinbarez/LSP-VHDL-ls",
 			"name": "LSP-VHDL-ls",
-			"labels": ["lsp", "vhdl"],
+			"labels": [
+				"lsp",
+				"vhdl"
+			],
 			"releases": [
 				{
 					"sublime_text": ">=4070",
@@ -859,7 +1048,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-volar",
 			"name": "LSP-volar",
-			"labels": ["lsp", "vue"],
+			"labels": [
+				"lsp",
+				"vue"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 4147",
@@ -874,7 +1066,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-vue",
 			"name": "LSP-vue",
-			"labels": ["lsp", "vue"],
+			"labels": [
+				"lsp",
+				"vue"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 3999",
@@ -889,7 +1084,10 @@
 		{
 			"details": "https://github.com/sublimelsp/LSP-yaml",
 			"name": "LSP-yaml",
-			"labels": ["lsp", "yaml"],
+			"labels": [
+				"lsp",
+				"yaml"
+			],
 			"releases": [
 				{
 					"sublime_text": "3154 - 4147",
