@@ -49,6 +49,7 @@
 			],
 			"labels": [
 				"lsp",
+				"intellisense",
 				"auto-complete",
 				"linting",
 				"formatting",
