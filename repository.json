@@ -848,6 +848,26 @@
 			]
 		},
 		{
+			"details": "https://github.com/SpyglassMC/LSP-Spyglass",
+			"name": "LSP-Spyglass",
+			"labels": [
+				"mcfunction",
+				"minecraft",
+				"language syntax",
+				"datapack",
+				"auto-complete",
+				"linting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4000",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-stylelint",
 			"name": "LSP-stylelint",
 			"labels": [
