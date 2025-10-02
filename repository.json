@@ -976,6 +976,20 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-ty",
+			"name": "LSP-ty",
+			"labels": [
+				"lsp",
+				"python"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4132",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-typescript",
 			"name": "LSP-typescript",
 			"labels": [
