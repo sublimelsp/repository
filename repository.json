@@ -735,6 +735,21 @@
 			]
 		},
 		{
+			"details": "https://github.com/alihsaas/LSP-robloxluau",
+			"name": "LSP-robloxluau",
+			"releases": [
+				{
+					"platforms": [
+						"windows-x64",
+						"osx-x64",
+						"linux-x64"
+					],
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-R",
 			"name": "LSP-R",
 			"labels": [
