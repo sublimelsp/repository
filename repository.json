@@ -528,11 +528,8 @@
 			"name": "LSP-lean",
 			"details": "https://github.com/LexouDuck/SublimeText-LSP-Lean",
 			"labels": [
-				"auto-complete",
-				"linting",
-				"formatting",
-				"code navigation",
-				"intellisense"
+				"lsp",
+				"lean",
 			],
 			"releases": [
 				{
