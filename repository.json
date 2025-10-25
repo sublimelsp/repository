@@ -529,7 +529,7 @@
 			"details": "https://github.com/LexouDuck/SublimeText-LSP-Lean",
 			"labels": [
 				"lsp",
-				"lean",
+				"lean"
 			],
 			"releases": [
 				{
