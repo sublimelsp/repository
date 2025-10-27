@@ -525,6 +525,20 @@
 			]
 		},
 		{
+			"name": "LSP-lean",
+			"details": "https://github.com/LexouDuck/SublimeText-LSP-Lean",
+			"labels": [
+				"lsp",
+				"lean"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-leo",
 			"name": "LSP-leo",
 			"previous_names": [
