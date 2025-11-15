@@ -1125,6 +1125,23 @@
 			]
 		},
 		{
+			"details": "https://gitlab.com/webhare/lsp/LSP-webhare",
+			"name": "LSP-webhare",
+			"labels": [
+				"auto-complete",
+				"linting",
+				"formatting",
+				"code navigation",
+				"intellisense"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=3092",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-yaml",
 			"name": "LSP-yaml",
 			"labels": [
