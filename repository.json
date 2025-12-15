@@ -57,6 +57,19 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-SonarLint",
+			"name": "LSP-SonarLint",
+			"releases": [
+				{
+					"date": "2020-09-29 09:24:23",
+					"platforms": "*",
+					"sublime_text": ">=4070",
+					"url": "https://github.com/sublimelsp/LSP-SonarLint/releases/download/v0.0.1/LSP-SonarLint.zip",
+					"version": "v0.0.1"
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-angular",
 			"name": "LSP-angular",
 			"labels": [
