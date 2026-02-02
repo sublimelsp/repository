@@ -1135,7 +1135,7 @@
 			]
 		},
 		{
-			"details": "https://github.com/jossephus/LSP-wren-lsp",
+			"details": "https://github.com/sublimelsp/LSP-wren-lsp",
 			"name": "LSP-wren-lsp",
 			"labels": [
 				"lsp",
