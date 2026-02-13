@@ -15,7 +15,7 @@
 				{
 					"base": "https://github.com/sublimelsp/lsp_utils",
 					"sublime_text": ">=4132",
-					"tags": true
+					"tags": "st4legacy-v"
 				}
 			]
 		}
