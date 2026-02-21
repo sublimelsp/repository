@@ -791,6 +791,21 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-Relay",
+			"name": "LSP-Relay",
+			"labels": [
+				"lsp",
+				"relay",
+				"graphql"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-rome",
 			"name": "LSP-rome",
 			"labels": [
