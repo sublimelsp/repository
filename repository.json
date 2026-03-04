@@ -154,6 +154,21 @@
 			]
 		},
 		{
+			"details": "https://github.com/huyhoang8398/LSP-bitbake",
+			"name": "LSP-bitbake",
+			"labels": [
+				"lsp",
+				"bitbake",
+				"yocto"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4148",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-clangd",
 			"name": "LSP-clangd",
 			"labels": [
