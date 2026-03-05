@@ -154,7 +154,7 @@
 			]
 		},
 		{
-			"details": "https://github.com/huyhoang8398/LSP-bitbake",
+			"details": "https://github.com/sublimelsp/LSP-bitbake",
 			"name": "LSP-bitbake",
 			"labels": [
 				"lsp",
