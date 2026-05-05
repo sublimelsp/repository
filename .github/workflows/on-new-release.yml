@@ -1,10 +1,11 @@
 name: On New Release
 
-on: [repository_dispatch]
+on:
+  repository_dispatch:
+    types: [lsp-add-or-update-package]
 
 jobs:
   create-pull-request:
-    if: github.event.action == 'lsp-add-or-update-package'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
