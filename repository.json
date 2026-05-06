@@ -351,6 +351,8 @@
 			]
 		},
 		{
+			"name": "LSP-file-watcher-rust",
+			"details": "https://github.com/sublimelsp/LSP-file-watcher-rust",
 			"releases": [
 				{
 					"url": "https://github.com/sublimelsp/LSP-file-watcher-rust/releases/download/1.0.0/LSP-file-watcher-rust_linux-arm64.zip",
@@ -387,9 +389,7 @@
 					"version": "1.0.0",
 					"sublime_text": ">=4148"
 				}
-			],
-			"name": "LSP-file-watcher-rust",
-			"details": "https://github.com/sublimelsp/LSP-file-watcher-rust"
+			]
 		},
 		{
 			"details": "https://github.com/sublimelsp/LSP-flow",
