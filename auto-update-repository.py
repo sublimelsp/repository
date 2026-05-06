@@ -13,11 +13,12 @@ be updated for each new release. This script automates that boring process.
 TODO: The sublime_text version range should be extracted from JSON.
 """
 
-from typing import Dict, Any
+from typing import Dict, Any, List
 import functools
 import json
 import pathlib
 import sys
+import urllib.request
 
 
 def st_version_range_from_release_body(body: str) -> str:
@@ -128,6 +129,11 @@ def set_workflow_output(**kwargs: str) -> None:
         print("::set-output name={}::{}".format(key, value))
 
 
+def fetch_release_assets(assets_url: str) -> List[Dict[str, Any]]:
+    with urllib.request.urlopen(assets_url) as response:
+        return json.loads(response.read())
+
+
 def main() -> None:
     source = json.load(sys.stdin)
     release = source["release"]
@@ -137,8 +143,9 @@ def main() -> None:
     st_version_range = st_version_range_from_release_body(body)
     f = functools.partial(translate_release_asset,
                           st_version_range, tag_name, date)
+    assets = fetch_release_assets(release["assets_url"])
     payload = {
-        "releases": [f(asset) for asset in release["assets"]],
+        "releases": [f(asset) for asset in assets],
         "name": source["repository"]["name"],
         "details": source["repository"]["html_url"]
     }
