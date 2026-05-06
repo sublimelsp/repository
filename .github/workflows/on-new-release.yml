@@ -10,7 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - id: make-pr
-        run: python3 auto-update-repository.py <<<'${{ toJson(github.event.client_payload) }}'
+        env:
+          PAYLOAD: ${{ toJson(github.event.client_payload) }}
+        run: echo "$PAYLOAD" | python3 auto-update-repository.py
       - uses: peter-evans/create-pull-request@v8
         with:
           commit-message: '${{ steps.make-pr.outputs.commit_message }}'
