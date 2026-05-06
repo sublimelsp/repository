@@ -32,7 +32,7 @@ def st_version_range_from_release_body(body: str) -> str:
     for line in body.splitlines():
         if line.startswith(prefix):
             return line[len(prefix):]
-    return ">=3154"
+    return ">=4148"
 
 
 def extract_platform_from_asset_name(name: str) -> str:
@@ -47,10 +47,12 @@ def extract_platform_from_asset_name(name: str) -> str:
     - `windows-x64`
     - `windows-x32`
     - `osx`
+    - `osx-arm64`
     - `osx-x64`
     - `linux`
     - `linux-x32`
     - `linux-x64`
+    - `linux-arm64`
     """
     for needle in ("_windows", "_osx", "_linux"):
         if needle in name:
