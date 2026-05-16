@@ -1064,6 +1064,21 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-tsgo",
+			"name": "LSP-tsgo",
+			"labels": [
+				"lsp",
+				"javascript",
+				"typescript"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4148",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-ty",
 			"name": "LSP-ty",
 			"labels": [
