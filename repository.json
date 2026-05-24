@@ -645,6 +645,23 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-ltex-ls-plus",
+			"name": "LSP-ltex-ls",
+			"author": "LDAP",
+			"labels": [
+				"lsp",
+				"spellcheck",
+				"latex",
+				"markdown"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-lua",
 			"name": "LSP-lua",
 			"labels": [
