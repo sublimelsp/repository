@@ -646,7 +646,7 @@
 		},
 		{
 			"details": "https://github.com/sublimelsp/LSP-ltex-ls-plus",
-			"name": "LSP-ltex-ls",
+			"name": "LSP-ltex-ls-plus",
 			"author": "LDAP",
 			"labels": [
 				"lsp",
