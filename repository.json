@@ -733,7 +733,7 @@
 			]
 		},
 		{
-			"details": "https://github.com/Sublime-Instincts/LSP-prisma",
+			"details": "https://github.com/sublimelsp/LSP-prisma",
 			"name": "LSP-prisma",
 			"labels": [
 				"lsp",
