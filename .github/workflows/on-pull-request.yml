@@ -12,6 +12,7 @@ jobs:
         with:
           fetch-depth: 0
           ref: refs/pull/${{ github.event.pull_request.number }}/merge
+          allow-unsafe-pr-checkout: true
 
       # Ensures python3-setuptools is installed
       - name: Setup Python
