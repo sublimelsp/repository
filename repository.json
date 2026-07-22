@@ -156,6 +156,21 @@
 			]
 		},
 		{
+			"details": "https://github.com/markup-carve/sublime-carve-lsp",
+			"name": "LSP-carve",
+			"labels": [
+				"lsp",
+				"carve",
+				"markup"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4000",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-clangd",
 			"name": "LSP-clangd",
 			"labels": [
