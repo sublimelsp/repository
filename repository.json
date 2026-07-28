@@ -585,6 +585,28 @@
 			]
 		},
 		{
+			"details": "https://github.com/laravel/sublime-extension",
+			"name": "LSP-Laravel",
+			"labels": [
+				"lsp",
+				"php",
+				"laravel"
+			],
+			"releases": [
+				{
+					"platforms": [
+						"linux-arm64",
+						"linux-x64",
+						"osx-arm64",
+						"osx-x64",
+						"windows-x64"
+					],
+					"sublime_text": ">=4132",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-kotlin",
 			"name": "LSP-kotlin",
 			"labels": [
