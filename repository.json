@@ -594,13 +594,6 @@
 			],
 			"releases": [
 				{
-					"platforms": [
-						"linux-arm64",
-						"linux-x64",
-						"osx-arm64",
-						"osx-x64",
-						"windows-x64"
-					],
 					"sublime_text": ">=4132",
 					"tags": true
 				}
