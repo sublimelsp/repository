@@ -751,6 +751,20 @@
 			]
 		},
 		{
+			"details": "https://github.com/idleberg/sublime-lsp-nsis",
+			"name": "LSP-nsis",
+			"labels": [
+				"lsp",
+				"nsis"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-OmniSharp",
 			"name": "LSP-OmniSharp",
 			"labels": [
