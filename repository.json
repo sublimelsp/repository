@@ -868,6 +868,20 @@
 			]
 		},
 		{
+			"details": "https://gitlab.com/doering-ai-sublime/lsp-pyrefly",
+			"name": "LSP-pyrefly",
+			"labels": [
+				"lsp",
+				"python"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4000",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-pyright",
 			"name": "LSP-pyright",
 			"labels": [
@@ -1027,6 +1041,19 @@
 					"sublime_text": "3154 - 3999",
 					"tags": "st3-"
 				},
+				{
+					"sublime_text": ">=4000",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://gitlab.com/doering-ai-sublime/lsp-syntax",
+			"name": "LSP-syntect",
+			"labels": [
+				"lsp"
+			],
+			"releases": [
 				{
 					"sublime_text": ">=4000",
 					"tags": true
