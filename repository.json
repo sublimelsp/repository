@@ -730,11 +730,8 @@
 			],
 			"releases": [
 				{
-					"url": "https://github.com/Windsland52/maa-support-sublime/releases/download/v0.3.0/LSP-MaaFramework.sublime-package",
-					"platforms": "*",
-					"date": "2026-08-08 15:37:30",
-					"version": "0.3.0",
-					"sublime_text": ">=4000"
+					"sublime_text": ">=4000",
+					"tags": "sublime-v"
 				}
 			]
 		},
