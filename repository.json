@@ -1050,7 +1050,7 @@
 			]
 		},
 		{
-			"details": "https://github.com/macowie/LSP-systemd",
+			"details": "https://github.com/sublimelsp/LSP-systemd",
 			"name": "LSP-systemd",
 			"labels": [
 				"lsp",
