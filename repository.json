@@ -1119,11 +1119,13 @@
 			"readme": "https://raw.githubusercontent.com/bitwisecook/tcl-lsp/rust/editors/sublime-text/README.md",
 			"releases": [
 				{
-					"asset": "LSP-Tcl.sublime-package",
+					"date": "2026-09-07 11:44:04",
 					"python_versions": [
 						"3.8"
 					],
-					"sublime_text": ">=4107"
+					"sublime_text": ">=4107",
+					"url": "https://github.com/bitwisecook/tcl-lsp/releases/download/v2.2.3/LSP-Tcl.sublime-package",
+					"version": "2.2.3"
 				}
 			]
 		},
