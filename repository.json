@@ -1109,6 +1109,25 @@
 			]
 		},
 		{
+			"details": "https://github.com/bitwisecook/tcl-lsp",
+			"issues": "https://github.com/bitwisecook/tcl-lsp/issues",
+			"labels": [
+				"lsp",
+				"tcl"
+			],
+			"name": "LSP-Tcl",
+			"readme": "https://raw.githubusercontent.com/bitwisecook/tcl-lsp/rust/editors/sublime-text/README.md",
+			"releases": [
+				{
+					"asset": "LSP-Tcl.sublime-package",
+					"python_versions": [
+						"3.8"
+					],
+					"sublime_text": ">=4107"
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-terraform",
 			"name": "LSP-terraform",
 			"previous_names": [
