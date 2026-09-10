@@ -320,6 +320,20 @@
 			]
 		},
 		{
+			"details": "https://github.com/ijlee2/LSP-ember",
+			"name": "LSP-ember",
+			"labels": [
+				"lsp",
+				"ember"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-eslint",
 			"name": "LSP-eslint",
 			"labels": [
