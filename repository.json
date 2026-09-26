@@ -838,6 +838,21 @@
 			]
 		},
 		{
+			"details": "https://github.com/NiceFeatures/LSP-pawnforge",
+			"labels": [
+				"lsp",
+				"pawn",
+				"amxmodx"
+			],
+			"name": "LSP-pawnforge",
+			"releases": [
+				{
+					"sublime_text": ">=4000",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/Sublime-Instincts/LSP-prisma",
 			"name": "LSP-prisma",
 			"labels": [
