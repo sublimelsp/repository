@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   # Review phase only. The comment is posted by on-pull-request-report.yml.
-  # Runs on non-draft PR events, or on demand via a PR comment with "📦" or "/review".
+  # Runs on non-draft PR events, or on demand via a PR comment.
   package:
     if: >-
       ${{
