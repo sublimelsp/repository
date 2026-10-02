@@ -4,7 +4,7 @@ on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
   issue_comment:
-    types: [created]  # run when comment added with "📦" or "/review"
+    types: [created]  # run on "/review" comment
 
 permissions:
   contents: read
@@ -20,11 +20,7 @@ jobs:
         (github.event_name == 'pull_request' && !github.event.pull_request.draft) ||
         (
           github.event_name == 'issue_comment' &&
-          github.event.issue.pull_request != null &&
-          (
-            contains(github.event.comment.body, '📦') ||
-            contains(github.event.comment.body, '/review')
-          )
+          github.event.issue.pull_request != null && contains(github.event.comment.body, '/review')
         )
       }}
     runs-on: ubuntu-latest
