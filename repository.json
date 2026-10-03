@@ -1377,6 +1377,20 @@
 					"tags": true
 				}
 			]
+		},
+		{
+			"name": "LSP-zuban",
+			"details": "https://github.com/relikd/LSP-zuban_sublime",
+			"labels": [
+				"lsp",
+				"python"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4000",
+					"tags": true
+				}
+			]
 		}
 	],
 	"schema_version": "3.0.0"
