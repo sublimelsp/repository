@@ -1,0 +1,21 @@
+name: On PR Report
+
+on:
+  workflow_run:
+    workflows: ["On PR"]  # must match the name of on-pull-request.yml
+    types: [completed]
+
+jobs:
+  post-review:
+    if: ${{ github.event.workflow_run.conclusion != 'skipped' }}
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      issues: write
+      actions: read
+      contents: read
+    steps:
+      - name: Post PR comment from artifact
+        uses: kaste/st_package_reviewer/gh_action@1d97146eb6ff2986c67195123a9a6cfaf7776cdd # v1.3.11
+        with:
+          phase: report
