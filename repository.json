@@ -334,6 +334,21 @@
 			]
 		},
 		{
+			"details": "https://github.com/upyesp/LSP-epher",
+			"name": "LSP-epher",
+			"labels": [
+				"lsp",
+				"epher",
+				"language syntax"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4132",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-eslint",
 			"name": "LSP-eslint",
 			"labels": [
