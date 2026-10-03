@@ -3,6 +3,8 @@ name: On PR
 on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - repository.json
   issue_comment:
     types: [created]  # run on "/review" comment
 
