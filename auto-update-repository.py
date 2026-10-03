@@ -13,11 +13,12 @@ be updated for each new release. This script automates that boring process.
 TODO: The sublime_text version range should be extracted from JSON.
 """
 
-from typing import Dict, Any
+from typing import Dict, Any, List
 import functools
 import json
 import pathlib
 import sys
+import urllib.request
 
 
 def st_version_range_from_release_body(body: str) -> str:
@@ -31,7 +32,7 @@ def st_version_range_from_release_body(body: str) -> str:
     for line in body.splitlines():
         if line.startswith(prefix):
             return line[len(prefix):]
-    return ">=3154"
+    return ">=4148"
 
 
 def extract_platform_from_asset_name(name: str) -> str:
@@ -46,10 +47,12 @@ def extract_platform_from_asset_name(name: str) -> str:
     - `windows-x64`
     - `windows-x32`
     - `osx`
+    - `osx-arm64`
     - `osx-x64`
     - `linux`
     - `linux-x32`
     - `linux-x64`
+    - `linux-arm64`
     """
     for needle in ("_windows", "_osx", "_linux"):
         if needle in name:
@@ -128,6 +131,11 @@ def set_workflow_output(**kwargs: str) -> None:
         print("::set-output name={}::{}".format(key, value))
 
 
+def fetch_release_assets(assets_url: str) -> List[Dict[str, Any]]:
+    with urllib.request.urlopen(assets_url) as response:
+        return json.loads(response.read())
+
+
 def main() -> None:
     source = json.load(sys.stdin)
     release = source["release"]
@@ -137,8 +145,9 @@ def main() -> None:
     st_version_range = st_version_range_from_release_body(body)
     f = functools.partial(translate_release_asset,
                           st_version_range, tag_name, date)
+    assets = fetch_release_assets(release["assets_url"])
     payload = {
-        "releases": [f(asset) for asset in release["assets"]],
+        "releases": [f(asset) for asset in assets],
         "name": source["repository"]["name"],
         "details": source["repository"]["html_url"]
     }
@@ -155,7 +164,7 @@ def main() -> None:
     if not found:
         create_package(repository, payload)
     with repository_path.open("w") as fp:
-        json.dump(repository, fp, indent="\t", sort_keys=True)
+        json.dump(repository, fp, indent="\t")
         fp.write("\n")
     commit_title = "Update {}".format(name) if found else "Add {}".format(name)
     set_workflow_output(
