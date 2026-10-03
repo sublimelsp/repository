@@ -961,7 +961,7 @@
 			]
 		},
 		{
-			"details": "https://github.com/sublimelsp/LSP-Relay",
+			"details": "https://github.com/sublimelsp/LSP-relay",
 			"name": "LSP-Relay",
 			"labels": [
 				"lsp",
