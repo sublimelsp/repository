@@ -15,25 +15,12 @@
 				{
 					"base": "https://github.com/sublimelsp/lsp_utils",
 					"sublime_text": ">=4132",
-					"tags": true
+					"tags": "st4legacy-v"
 				}
 			]
 		}
 	],
 	"packages": [
-		{
-			"details": "https://github.com/cameroncooper/sublime-chialisp",
-			"name": "Chialisp",
-			"labels": [
-				"lsp"
-			],
-			"releases": [
-				{
-					"sublime_text": ">=4000",
-					"tags": true
-				}
-			]
-		},
 		{
 			"details": "https://github.com/sublimelsp/LSP",
 			"name": "LSP",
@@ -149,6 +136,36 @@
 			"releases": [
 				{
 					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-bitbake",
+			"name": "LSP-bitbake",
+			"labels": [
+				"lsp",
+				"bitbake",
+				"yocto"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4148",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/markup-carve/sublime-carve-lsp",
+			"name": "LSP-carve",
+			"labels": [
+				"lsp",
+				"carve",
+				"markup"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4000",
 					"tags": true
 				}
 			]
@@ -303,6 +320,20 @@
 			]
 		},
 		{
+			"details": "https://github.com/ijlee2/LSP-ember",
+			"name": "LSP-ember",
+			"labels": [
+				"lsp",
+				"ember"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-eslint",
 			"name": "LSP-eslint",
 			"labels": [
@@ -322,6 +353,20 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-esphome",
+			"name": "LSP-esphome",
+			"labels": [
+				"lsp",
+				"esphome"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4148",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-file-watcher-chokidar",
 			"name": "LSP-file-watcher-chokidar",
 			"labels": [
@@ -335,11 +380,73 @@
 			]
 		},
 		{
+			"releases": [
+				{
+					"url": "https://github.com/sublimelsp/LSP-file-watcher-rust/releases/download/1.1.3/LSP-file-watcher-rust_linux-arm64.zip",
+					"platforms": "linux-arm64",
+					"date": "2026-08-24 20:51:40",
+					"version": "1.1.3",
+					"sublime_text": ">=4148"
+				},
+				{
+					"url": "https://github.com/sublimelsp/LSP-file-watcher-rust/releases/download/1.1.3/LSP-file-watcher-rust_linux-x64.zip",
+					"platforms": "linux-x64",
+					"date": "2026-08-24 20:51:40",
+					"version": "1.1.3",
+					"sublime_text": ">=4148"
+				},
+				{
+					"url": "https://github.com/sublimelsp/LSP-file-watcher-rust/releases/download/1.1.3/LSP-file-watcher-rust_osx-arm64.zip",
+					"platforms": "osx-arm64",
+					"date": "2026-08-24 20:51:40",
+					"version": "1.1.3",
+					"sublime_text": ">=4148"
+				},
+				{
+					"url": "https://github.com/sublimelsp/LSP-file-watcher-rust/releases/download/1.1.3/LSP-file-watcher-rust_osx-x64.zip",
+					"platforms": "osx-x64",
+					"date": "2026-08-24 20:51:40",
+					"version": "1.1.3",
+					"sublime_text": ">=4148"
+				},
+				{
+					"url": "https://github.com/sublimelsp/LSP-file-watcher-rust/releases/download/1.1.3/LSP-file-watcher-rust_windows-arm64.zip",
+					"platforms": "windows-arm64",
+					"date": "2026-08-24 20:51:40",
+					"version": "1.1.3",
+					"sublime_text": ">=4148"
+				},
+				{
+					"url": "https://github.com/sublimelsp/LSP-file-watcher-rust/releases/download/1.1.3/LSP-file-watcher-rust_windows-x64.zip",
+					"platforms": "windows-x64",
+					"date": "2026-08-24 20:51:40",
+					"version": "1.1.3",
+					"sublime_text": ">=4148"
+				}
+			],
+			"name": "LSP-file-watcher-rust",
+			"details": "https://github.com/sublimelsp/LSP-file-watcher-rust"
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-flow",
 			"name": "LSP-flow",
 			"labels": [
 				"lsp",
 				"flow"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-gh-actions",
+			"name": "LSP-gh-actions",
+			"labels": [
+				"github-action",
+				"workflow"
 			],
 			"releases": [
 				{
@@ -492,6 +599,21 @@
 			]
 		},
 		{
+			"details": "https://github.com/laravel/sublime-extension",
+			"name": "LSP-Laravel",
+			"labels": [
+				"lsp",
+				"php",
+				"laravel"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4132",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-kotlin",
 			"name": "LSP-kotlin",
 			"labels": [
@@ -526,7 +648,7 @@
 		},
 		{
 			"name": "LSP-lean",
-			"details": "https://github.com/LexouDuck/SublimeText-LSP-Lean",
+			"details": "https://github.com/sublimelsp/LSP-lean",
 			"labels": [
 				"lsp",
 				"lean"
@@ -581,6 +703,23 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-ltex-ls-plus",
+			"name": "LSP-ltex-ls-plus",
+			"author": "LDAP",
+			"labels": [
+				"lsp",
+				"spellcheck",
+				"latex",
+				"markdown"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-lua",
 			"name": "LSP-lua",
 			"labels": [
@@ -591,6 +730,22 @@
 				{
 					"sublime_text": ">=4070",
 					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/Windsland52/maa-support-sublime",
+			"name": "LSP-MaaFramework",
+			"labels": [
+				"lsp",
+				"json",
+				"linting",
+				"code navigation"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4000",
+					"tags": "sublime-v"
 				}
 			]
 		},
@@ -641,6 +796,20 @@
 			]
 		},
 		{
+			"details": "https://github.com/idleberg/sublime-lsp-nsis",
+			"name": "LSP-nsis",
+			"labels": [
+				"lsp",
+				"nsis"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-OmniSharp",
 			"name": "LSP-OmniSharp",
 			"labels": [
@@ -664,6 +833,21 @@
 			"releases": [
 				{
 					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/NiceFeatures/LSP-pawnforge",
+			"labels": [
+				"lsp",
+				"pawn",
+				"amxmodx"
+			],
+			"name": "LSP-pawnforge",
+			"releases": [
+				{
+					"sublime_text": ">=4000",
 					"tags": true
 				}
 			]
@@ -792,21 +976,6 @@
 			]
 		},
 		{
-			"details": "https://github.com/sublimelsp/LSP-rome",
-			"name": "LSP-rome",
-			"labels": [
-				"lsp",
-				"javascript",
-				"typescript"
-			],
-			"releases": [
-				{
-					"sublime_text": ">=4070",
-					"tags": true
-				}
-			]
-		},
-		{
 			"details": "https://github.com/sublimelsp/LSP-ruff",
 			"name": "LSP-ruff",
 			"author": "LDAP",
@@ -925,6 +1094,20 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-systemd",
+			"name": "LSP-systemd",
+			"labels": [
+				"lsp",
+				"systemd"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4000",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/HuygensING/LSP-tagml",
 			"name": "LSP-tagml",
 			"labels": [
@@ -1010,6 +1193,21 @@
 			"releases": [
 				{
 					"sublime_text": ">=4132",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-tsgo",
+			"name": "LSP-tsgo",
+			"labels": [
+				"lsp",
+				"javascript",
+				"typescript"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4148",
 					"tags": true
 				}
 			]
@@ -1114,6 +1312,20 @@
 			]
 		},
 		{
+			"details": "https://github.com/mgomes/LSP-vibescript",
+			"labels": [
+				"lsp",
+				"vibescript"
+			],
+			"name": "LSP-vibescript",
+			"releases": [
+				{
+					"sublime_text": ">=4107",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-volar",
 			"name": "LSP-volar",
 			"labels": [
@@ -1145,6 +1357,20 @@
 				},
 				{
 					"sublime_text": ">=4000",
+					"tags": true
+				}
+			]
+		},
+		{
+			"details": "https://github.com/sublimelsp/LSP-wren-lsp",
+			"name": "LSP-wren-lsp",
+			"labels": [
+				"lsp",
+				"wren"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
 					"tags": true
 				}
 			]

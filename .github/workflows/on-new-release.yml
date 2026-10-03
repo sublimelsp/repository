@@ -1,16 +1,19 @@
 name: On New Release
 
-on: [repository_dispatch]
+on:
+  repository_dispatch:
+    types: [lsp-add-or-update-package]
 
 jobs:
   create-pull-request:
-    if: github.event.action == 'lsp-add-or-update-package'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - id: make-pr
-        run: python3 auto-update-repository.py <<<'${{ toJson(github.event.client_payload) }}'
-      - uses: peter-evans/create-pull-request@v8
+        env:
+          PAYLOAD: ${{ toJson(github.event.client_payload) }}
+        run: echo "$PAYLOAD" | python3 auto-update-repository.py
+      - uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
         with:
           commit-message: '${{ steps.make-pr.outputs.commit_message }}'
           committer: GitHub <noreply@github.com>

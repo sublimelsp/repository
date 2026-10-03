@@ -1,32 +1,32 @@
 name: On PR
 
 on:
-  pull_request_target:
-    types: [opened, synchronize, reopened, review_requested]
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  issue_comment:
+    types: [created]  # run on "/review" comment
+
+permissions:
+  contents: read
+  pull-requests: read
+  issues: write  # needed for issue-comment acknowledgements
 
 jobs:
-  trigger-review:
+  # Review phase only. The comment is posted by on-pull-request-report.yml.
+  # Runs on non-draft PR events, or on demand via a PR comment.
+  package:
+    if: >-
+      ${{
+        (github.event_name == 'pull_request' && !github.event.pull_request.draft) ||
+        (
+          github.event_name == 'issue_comment' &&
+          github.event.issue.pull_request != null && contains(github.event.comment.body, '/review')
+        )
+      }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - name: Diff and review changed/added packages
+        uses: kaste/st_package_reviewer/gh_action@1d97146eb6ff2986c67195123a9a6cfaf7776cdd # v1.3.11
         with:
-          fetch-depth: 0
-          ref: refs/pull/${{ github.event.pull_request.number }}/merge
-
-      # Ensures python3-setuptools is installed
-      - name: Setup Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: 3.13
-
-      - name: Install Python dependencies
-        run: python3 -m pip install pyyaml
-
-      - uses: packagecontrol/st-schema-reviewer-action@v1
-
-      - uses: packagecontrol/st-package-reviewer-action@v1
-        with:
-          pr-url: ${{ github.event.pull_request.url }}
-          base-sha: ${{ github.event.pull_request.base.sha }}
-          current-sha: ${{ github.event.pull_request.head.sha }}
-          token: ${{ secrets.STREVIEWBOT_PERSONAL_ACCESS_TOKEN }}
+          pr: ${{ github.event.pull_request.html_url || github.event.issue.pull_request.html_url }}
+          file: repository.json
