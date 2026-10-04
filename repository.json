@@ -1380,7 +1380,7 @@
 		},
 		{
 			"name": "LSP-zuban",
-			"details": "https://github.com/relikd/LSP-zuban_sublime",
+			"details": "https://github.com/sublimelsp/LSP-zuban",
 			"labels": [
 				"lsp",
 				"python"
