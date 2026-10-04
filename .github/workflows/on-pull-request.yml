@@ -3,13 +3,10 @@ name: On PR
 on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - repository.json
   issue_comment:
     types: [created]  # run on "/review" comment
-
-permissions:
-  contents: read
-  pull-requests: read
-  issues: write  # needed for issue-comment acknowledgements
 
 jobs:
   # Review phase only. The comment is posted by on-pull-request-report.yml.
@@ -24,9 +21,12 @@ jobs:
         )
       }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write  # needed to react to "/review" comments on PRs
     steps:
       - name: Diff and review changed/added packages
-        uses: kaste/st_package_reviewer/gh_action@1d97146eb6ff2986c67195123a9a6cfaf7776cdd # v1.3.11
+        uses: kaste/st_package_reviewer/gh_action@d3263da7c96cb831b52bf4a7323ab372bd23d461 # v1.3.12
         with:
           pr: ${{ github.event.pull_request.html_url || github.event.issue.pull_request.html_url }}
           file: repository.json
