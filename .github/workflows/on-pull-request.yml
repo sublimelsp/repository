@@ -8,11 +8,6 @@ on:
   issue_comment:
     types: [created]  # run on "/review" comment
 
-permissions:
-  contents: read
-  pull-requests: read
-  issues: write  # needed for issue-comment acknowledgements
-
 jobs:
   # Review phase only. The comment is posted by on-pull-request-report.yml.
   # Runs on non-draft PR events, or on demand via a PR comment.
@@ -26,6 +21,9 @@ jobs:
         )
       }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write  # needed to react to "/review" comments on PRs
     steps:
       - name: Diff and review changed/added packages
         uses: kaste/st_package_reviewer/gh_action@d3263da7c96cb831b52bf4a7323ab372bd23d461 # v1.3.12
