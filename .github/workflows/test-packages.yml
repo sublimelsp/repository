@@ -1,0 +1,78 @@
+name: Test Packages
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - repository.json
+
+jobs:
+  type-check:
+    name: Type-check changed packages
+    runs-on: macOS-latest
+    steps:
+      - name: Check out PR branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          path: repository
+
+      - name: Find added or changed packages
+        id: changed
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          git fetch --quiet --depth=1 origin "$BASE_SHA"
+          git show "$BASE_SHA:repository.json" > "$RUNNER_TEMP/base-repository.json"
+          python3 - <<'EOF'
+          import json
+          import os
+
+          with open(os.path.join(os.environ['RUNNER_TEMP'], 'base-repository.json'), encoding='utf-8') as f:
+              base = {p['name']: p for p in json.load(f)['packages']}
+          with open('repository.json', encoding='utf-8') as f:
+              head = {p['name']: p for p in json.load(f)['packages']}
+          changed = sorted(name for name, package in head.items() if base.get(name) != package)
+          print('Added or changed packages:', ', '.join(changed) or 'none')
+          with open(os.path.join(os.environ['RUNNER_TEMP'], 'changed-packages.txt'), 'w', encoding='utf-8') as f:
+              f.writelines(f'{name}\n' for name in changed)
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as f:
+              f.write(f'any={"true" if changed else "false"}\n')
+          EOF
+        working-directory: repository
+
+      - name: Check out lsp_maintainers
+        if: steps.changed.outputs.any == 'true'
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: sublimelsp/lsp_maintainers
+          path: lsp_maintainers
+
+      - name: Check out changed package repositories
+        if: steps.changed.outputs.any == 'true'
+        run: |
+          args=()
+          while IFS= read -r name; do
+            args+=(--only "$name")
+          done < "$RUNNER_TEMP/changed-packages.txt"
+          python3 scripts/checkout-repos.py \
+            --repository "$GITHUB_WORKSPACE/repository/repository.json" \
+            "${args[@]}"
+        working-directory: lsp_maintainers
+
+      - name: Setup uv
+        if: steps.changed.outputs.any == 'true'
+        uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7 # v10.2.0
+
+      - name: Sync venv and type check
+        if: steps.changed.outputs.any == 'true'
+        # Check only the changed packages and not LSP, which checkout-repos.py also checks out.
+        run: |
+          uv sync
+          uv pip install -r requirements-packages.txt
+          packages=()
+          while IFS= read -r name; do
+            packages+=("$name")
+          done < "$RUNNER_TEMP/changed-packages.txt"
+          uv run basedpyright "${packages[@]}"
+        working-directory: lsp_maintainers/repositories
