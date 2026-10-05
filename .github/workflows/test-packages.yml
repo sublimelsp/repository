@@ -24,21 +24,17 @@ jobs:
         run: |
           git fetch --quiet --depth=1 origin "$BASE_SHA"
           git show "$BASE_SHA:repository.json" > "$RUNNER_TEMP/base-repository.json"
-          python3 - <<'EOF'
-          import json
-          import os
-
-          with open(os.path.join(os.environ['RUNNER_TEMP'], 'base-repository.json'), encoding='utf-8') as f:
-              base = {p['name']: p for p in json.load(f)['packages']}
-          with open('repository.json', encoding='utf-8') as f:
-              head = {p['name']: p for p in json.load(f)['packages']}
-          changed = sorted(name for name, package in head.items() if base.get(name) != package)
-          print('Added or changed packages:', ', '.join(changed) or 'none')
-          with open(os.path.join(os.environ['RUNNER_TEMP'], 'changed-packages.txt'), 'w', encoding='utf-8') as f:
-              f.writelines(f'{name}\n' for name in changed)
-          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as f:
-              f.write(f'any={"true" if changed else "false"}\n')
-          EOF
+          # A package is changed when it is not in the base repository.json or its entry differs.
+          jq -r --slurpfile base "$RUNNER_TEMP/base-repository.json" \
+            'INDEX($base[0].packages[]; .name) as $b | .packages[] | select($b[.name] != .) | .name' \
+            repository.json > "$RUNNER_TEMP/changed-packages.txt"
+          echo "Added or changed packages:"
+          cat "$RUNNER_TEMP/changed-packages.txt"
+          if [ -s "$RUNNER_TEMP/changed-packages.txt" ]; then
+            echo "any=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "any=false" >> "$GITHUB_OUTPUT"
+          fi
         working-directory: repository
 
       - name: Check out lsp_maintainers
