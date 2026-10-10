@@ -2,9 +2,13 @@ name: Schema test
 
 on:
   pull_request:
+    paths:
+      - repository.json
   push:
     branches:
       - main
+    paths:
+      - repository.json
 
 jobs:
   schema:
