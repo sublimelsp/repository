@@ -25,8 +25,17 @@ jobs:
       contents: read
       pull-requests: write  # needed to react to "/review" comments on PRs
     steps:
+      - name: Check out additional LSP checks
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: sublimelsp/lsp-package-reviewer-checks
+          ref: bd467ce55ed69cd398e31681502d629ae17c3144
+          path: lsp-package-reviewer-checks
+
       - name: Diff and review changed/added packages
-        uses: kaste/st_package_reviewer/gh_action@d3263da7c96cb831b52bf4a7323ab372bd23d461 # v1.3.12
+        uses: kaste/st_package_reviewer/gh_action@406c008ab8551a3eda62c5388bdd0ab1dba5e9f9 # v1.3.12-5-g406c008
         with:
           pr: ${{ github.event.pull_request.html_url || github.event.issue.pull_request.html_url }}
           file: repository.json
+          add-file-checkers: lsp-package-reviewer-checks/lsp_review_checks
+          exclude: CheckSettingsMenuEntry
