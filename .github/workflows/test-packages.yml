@@ -25,9 +25,11 @@ jobs:
           git fetch --quiet --depth=1 origin "$BASE_SHA"
           git show "$BASE_SHA:repository.json" > "$RUNNER_TEMP/base-repository.json"
           # A package is changed when it is not in the base repository.json or its entry differs.
-          # The name is optional and defaults to the repository name from the details URL.
+          # The name is optional and defaults to the repository name from the details URL: its last path segment
+          # before the branch part (GitLab URLs can contain nested groups).
           jq -r --slurpfile base "$RUNNER_TEMP/base-repository.json" '
-            def name: .name // (.details | sub("^https?://[^/]+/[^/]+/"; "") | split("/")[0]);
+            def name: .name // (.details | sub("^https?://[^/]+/"; "") | sub("/(-|tree|src)/.*$"; "")
+              | rtrimstr("/") | split("/") | last);
             INDEX($base[0].packages[]; name) as $b | .packages[] | select($b[name] != .) | name' \
             repository.json > "$RUNNER_TEMP/changed-packages.txt"
           echo "Added or changed packages:"
