@@ -996,6 +996,21 @@
 			]
 		},
 		{
+			"details": "https://github.com/sublimelsp/LSP-relay",
+			"name": "LSP-Relay",
+			"labels": [
+				"lsp",
+				"relay",
+				"graphql"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-ruff",
 			"name": "LSP-ruff",
 			"author": "LDAP",
