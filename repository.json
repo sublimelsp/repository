@@ -445,7 +445,8 @@
 			"details": "https://github.com/forge-language/sublime-text",
 			"name": "LSP-Forge",
 			"labels": [
-				"lsp"
+				"lsp",
+				"forge"
 			],
 			"releases": [
 				{
