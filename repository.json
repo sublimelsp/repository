@@ -1094,6 +1094,21 @@
 			]
 		},
 		{
+			"details": "https://github.com/statac-ssg/LSP-statac",
+			"issues": "https://git.statac.dev/statac/LSP-statac/issues",
+			"labels": [
+				"lsp",
+				"markdown",
+				"yaml"
+			],
+			"releases": [
+				{
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		},
+		{
 			"details": "https://github.com/sublimelsp/LSP-stylelint",
 			"name": "LSP-stylelint",
 			"labels": [
