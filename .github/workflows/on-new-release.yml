@@ -7,6 +7,10 @@ on:
 jobs:
   create-pull-request:
     runs-on: ubuntu-latest
+    # Releases of the same package update the same branch, so handle them one at a time.
+    concurrency:
+      group: release-pr-${{ github.event.client_payload.repository.name }}
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - id: make-pr
@@ -28,6 +32,7 @@ jobs:
           committer: GitHub <noreply@github.com>
           author: GitHub <noreply@github.com>
           delete-branch: true
-          branch-suffix: random
+          # One branch per package, so a newer release replaces the open PR for an older one instead of adding another.
+          branch: release/${{ github.event.client_payload.repository.name }}
           title: '${{ steps.make-pr.outputs.pr_title }}'
           body: '${{ steps.make-pr.outputs.pr_body }}'
