@@ -93,6 +93,16 @@ def translate_release_asset(
     }
 
 
+def package_name(package: Dict[str, Any]) -> str:
+    """
+    Name of a package entry. Package Control falls back to the last segment
+    of the details URL when an entry has no name.
+    """
+    if "name" in package:
+        return package["name"]
+    return package["details"].rstrip("/").rsplit("/", 1)[-1]
+
+
 def update_package(package: Dict[str, Any], payload: Dict[str, str]) -> None:
     """
     Update an existing Package Control repository package entry.
@@ -112,7 +122,7 @@ def create_package(
     packages = repository["packages"]
     index_to_insert = len(packages)
     for index, package in enumerate(packages):
-        current_name = package["name"]
+        current_name = package_name(package)
         if current_name < name:
             continue
         index_to_insert = index
@@ -157,7 +167,7 @@ def main() -> None:
     name = payload["name"]
     found = False
     for package in repository["packages"]:
-        if package["name"] == name:
+        if package_name(package) == name:
             update_package(package, payload)
             found = True
             break
