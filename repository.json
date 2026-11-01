@@ -1047,20 +1047,6 @@
 			]
 		},
 		{
-			"details": "https://github.com/sublimelsp/LSP-serenata",
-			"name": "LSP-serenata",
-			"labels": [
-				"lsp",
-				"php"
-			],
-			"releases": [
-				{
-					"sublime_text": "3154 - 3999",
-					"tags": true
-				}
-			]
-		},
-		{
 			"details": "https://github.com/sublimelsp/LSP-some-sass",
 			"name": "LSP-some-sass",
 			"labels": [
